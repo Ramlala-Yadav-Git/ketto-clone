@@ -1,0 +1,80 @@
+.Container{
+    width:25%;
+    height:480px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+}
+.Container>.imgprofile,.imgprofile1,.imgprofile2,.imgprofile3{
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.Container:hover{
+    box-shadow: 0 7px 14px rgb(0 0 0 / 10%);
+}
+
+.img1{
+    height:150px;
+
+    
+
+}
+ .img1 > img{
+    width:100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+
+}
+.imgprofile,.imgprofile1,.imgprofile2,.imgprofile3{
+    display: flex;
+    margin-left: 5px;
+}
+.imgprofile > img{
+    border-radius: 50%;
+    height: 50px;
+
+}
+.imgprofile >p{
+    margin-left: 3px;
+}
+
+.imgprofile2,.imgprofile3{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.imgprofile3>button{
+    height: 40px;
+    width: 110px;
+    margin-top: 10px;
+  
+}
+.head{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+/* //data.jsx */
+
+.data{
+    display: flex;
+    margin-left: 200px;;
+    gap:50px
+}
+.delete{
+    background-color: #01bfbd;
+    border: #01bfbd;
+    color: white;
+    border-radius: 2px;
+}
+.share{
+    border: 1px solid #3b5998;
+    color: #3b5998;
+    border-radius: 2px;
+
+
+}
