@@ -1,0 +1,13 @@
+
+.FundRaiserSteps{
+    border :1px solid black;
+    display: flex;
+    width: 40%;
+    float: left;
+}
+.FundRaiserVideo{
+    width: 40px;
+
+    float: left;
+    height: 10px;
+}

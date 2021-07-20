@@ -1,4 +1,5 @@
-import Styles from "../SectionFirst/SectionFirst.module.css"
+import Styles from "../SectionFirst/SectionFirst.module.css";
+import { Featured } from "./Featured";
 export function SectionFirst() {
 
 
@@ -16,6 +17,14 @@ export function SectionFirst() {
                     <div className={Styles.Details}>
                         <div>
                             <h2>
+                                0%
+                            </h2>
+                            <h3>
+                                PLATFORM FEE
+                            </h3>
+                        </div>
+                        <div>
+                            <h2>
                                 55 Lakh+
                             </h2>
                             <h3>
@@ -30,14 +39,7 @@ export function SectionFirst() {
                                 FUNDRAISERS
                             </h3>
                         </div>
-                        <div>
-                            <h2>
-                                0%
-                            </h2>
-                            <h3>
-                                PLATEFORM FEE
-                            </h3>
-                        </div>
+
                     </div>
                     <div>
                         <button>Start Fundraiser for FREE</button>
@@ -45,6 +47,7 @@ export function SectionFirst() {
                     </div>
                 </div>
             </div>
+            <Featured />
         </>
     )
 }
