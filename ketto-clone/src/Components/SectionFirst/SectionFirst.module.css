@@ -1,0 +1,15 @@
+.SectionFirst{
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-image: url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1366&dpr=1.0);
+    padding: 1%;
+}
+.ContentDiv{
+    border: 1px solid black;
+    width: 45%;
+    margin-left:50%;
+    padding:1% ;
+}
+.Details{
+display: flex;
+}
