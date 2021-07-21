@@ -1,0 +1,50 @@
+.FundRaiser{
+box-sizing: border-box;
+    font-family: 'Source Sans Pro',sans-serif;
+    margin-top: 100px;
+
+}
+.FundRaiser >h1{
+    text-align: center;
+    font-weight: 800;
+    color: rgb(29, 28, 28);
+}
+.FundRaiserSteps{
+    display: flex;
+    width: 40%;
+    float: left;
+    line-height: 20px;
+    font-family: 'Source Sans Pro',sans-serif;
+    margin: 5%;
+    margin-left: 15%;
+}
+
+.FundRaiserContent > div{
+    margin: 20px;
+    margin-bottom: 17%;
+    padding-left: 10px;
+}
+
+.FundRaiserSteps >div > img{
+height: 450px;
+}
+.FundRaiserSteps > div h2{
+    
+    color: rgb(9, 212, 212);
+}
+.FundRaiserSteps > div .Gray{
+color: rgb(49, 49, 49);
+font-size: 17px;
+}
+.FundRaiserVideo{
+    width: 30%;
+    float: left;
+    
+}
+.FundRaiserVideo > video{
+    width: 300px;
+}
+.GrayColor{
+color: rgb(177,177,177);
+font-size: 13px;
+}
