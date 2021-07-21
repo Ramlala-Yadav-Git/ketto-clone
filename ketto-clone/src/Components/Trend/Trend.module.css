@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Container {
   width: 25%;
   height: 500px;
@@ -79,6 +80,31 @@
   border: #01bfbd;
   color: white;
   border-radius: 2px;
+=======
+.data{
+    width: 80%;
+    margin: auto;
+    margin-top: 240px;
+    padding: 1%;
+    display: flex;
+
+
+}
+.data > div{
+    margin: 10px;
+}
+.Container{
+    width:30%;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+}
+
+.Container>.imgprofile,.imgprofile1,.imgprofile2,.imgprofile3{
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+>>>>>>> 59c138486c4e36cfecf55c11de3e97bb130e3657
 }
 
 .share {
@@ -87,11 +113,16 @@
   border-radius: 2px;
 }
 
+<<<<<<< HEAD
 .progress {
   width: 230px;
 }
 
 /* // box1 css */
+=======
+.img1{
+    height:180px;    
+>>>>>>> 59c138486c4e36cfecf55c11de3e97bb130e3657
 
 .Box1 {
   width: 350px;
@@ -105,6 +136,12 @@
   margin: auto;
   margin-top: 3%;
 }
+<<<<<<< HEAD
+=======
+ .img1 > img{
+    width:100%;
+  
+>>>>>>> 59c138486c4e36cfecf55c11de3e97bb130e3657
 
 .boss {
   display: grid;
@@ -150,6 +187,14 @@
   padding: 4%;
   border-radius: 5px;
   border: none;
+}
+.imgprofile > img{
+    border-radius: 50%;
+    height: 40px;
+
+}
+.imgprofile >p{
+    margin-left: 5px;
 }
 
 .share1 {
@@ -280,6 +325,12 @@ display:flex;
 .Fundraising>h3{
   margin-left: 10px;
 }
+.delete{
+    background-color: #01bfbd;
+    border: #01bfbd;
+    color: white;
+    border-radius: 2px;
+}
 
 .Fundraisgplus {
   border: 50px;
@@ -408,4 +459,28 @@ margin-right: 40px;
 }
 .leftright:hover{
   cursor: pointer;
+}
+=======
+}
+.progressBar{
+    width: 100%;
+    padding: 2px;
+}
+.progressBar progress{
+    width: 90%;
+    margin-left:5% ;
+    
+}
+.font{
+    color: rgb(172, 6, 6);
+    padding: 2px;
+}
+.bold{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-style: normal;
+}
+.margin{
+    margin-left: -15%;
+    font-style: 14px;
 }

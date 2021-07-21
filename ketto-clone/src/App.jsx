@@ -1,10 +1,16 @@
-import { Data } from "./Components/Trend/Data"
-import { NavBar } from "./Components/NavBar/NavBar"
-
+//import { Data } from "./Components/Trend/Data"
+//import { NavBar } from "./Components/NavBar/NavBar"
+/* import { ImageGallery } from "./Components/ImageGallery/ImageGallery";
+import { ToolContainer } from "./Components/ToolCategories/ToolContainer"; */
 function App() {
   return (
-    <div >
      
+    <div>
+      {/*  <NavBar />
+      <Data /> */}
+      {/* <ImageGallery />
+      <ToolContainer /> */}
+
     </div>
   );
 }

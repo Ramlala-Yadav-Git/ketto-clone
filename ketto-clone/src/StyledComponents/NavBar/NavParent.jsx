@@ -6,7 +6,6 @@ justify-content: space-around;
 padding: 2px;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-
 `;
 const LeftItems = styled.div`
 /* border: 1px solid green; */
