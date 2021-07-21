@@ -7,12 +7,14 @@ import { Browse } from './Components/Browse/Brows'
 
 function App() {
   return (
+
     <div>
       {/* <NavBar />
       <Data />
       <ImageGallery />
       <ToolContainer /> */}
-      <Browse />
+
+
     </div>
   );
 }
