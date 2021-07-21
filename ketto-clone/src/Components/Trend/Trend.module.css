@@ -1,9 +1,21 @@
+.data{
+    width: 80%;
+    margin: auto;
+    margin-top: 240px;
+    padding: 1%;
+    display: flex;
+
+
+}
+.data > div{
+    margin: 10px;
+}
 .Container{
-    width:25%;
-    height:480px;
-    border-radius: 5px;
+    width:30%;
+    border-radius: 10px;
     border: 1px solid #e8e8e8;
 }
+
 .Container>.imgprofile,.imgprofile1,.imgprofile2,.imgprofile3{
     padding-left:10px ;
     padding-right:10px ;
@@ -16,15 +28,12 @@
 }
 
 .img1{
-    height:150px;
-
-    
+    height:180px;    
 
 }
  .img1 > img{
     width:100%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+  
 
 
 }
@@ -34,11 +43,11 @@
 }
 .imgprofile > img{
     border-radius: 50%;
-    height: 50px;
+    height: 40px;
 
 }
 .imgprofile >p{
-    margin-left: 3px;
+    margin-left: 5px;
 }
 
 .imgprofile2,.imgprofile3{
@@ -60,11 +69,6 @@
 
 /* //data.jsx */
 
-.data{
-    display: flex;
-    margin-left: 200px;;
-    gap:50px
-}
 .delete{
     background-color: #01bfbd;
     border: #01bfbd;
@@ -77,4 +81,26 @@
     border-radius: 2px;
 
 
+}
+.progressBar{
+    width: 100%;
+    padding: 2px;
+}
+.progressBar progress{
+    width: 90%;
+    margin-left:5% ;
+    
+}
+.font{
+    color: rgb(172, 6, 6);
+    padding: 2px;
+}
+.bold{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-style: normal;
+}
+.margin{
+    margin-left: -15%;
+    font-style: 14px;
 }
