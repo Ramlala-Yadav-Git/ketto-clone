@@ -63,7 +63,9 @@
 .data{
     display: flex;
     margin-left: 200px;;
-    gap:50px
+    gap:50px;
+    margin-top:300px;
+    margin-bottom: 100px;
 }
 .delete{
     background-color: #01bfbd;
