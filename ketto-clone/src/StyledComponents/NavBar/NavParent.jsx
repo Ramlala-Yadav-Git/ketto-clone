@@ -51,7 +51,7 @@ img{
 
 const KetoIcon = styled.div`
 /* border: 1px solid black; */
-
+cursor: pointer;
 img{
     width: 80px;
     margin-top: -20px;
@@ -86,14 +86,16 @@ border: 2px solid rgb(37,211,102);
 color:rgb(37,211,102);
 padding: 5px 30px 0px 10px ;
 border-radius: 5px;
+cursor: pointer;
 
 &>div{
     display: flex;
     font-weight: bold;
 }
 img{
-    width: 30px;
-    border-radius:50%;
+    width: 20px;
+    border-radius:10%;
+    margin-right: 5px;
 }
 `
 const SearchIcon = styled.div`

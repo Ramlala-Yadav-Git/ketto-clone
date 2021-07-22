@@ -1,13 +1,14 @@
 
 
-export function BrowseSectionLeft({ CategoryName }) {
+export function BrowseSectionLeft({ CategoryName, HandleCategory }) {
+
 
     return (
         <>
 
             <div>
                 <div>
-                    <h3>{CategoryName} </h3>
+                    <p onClick={(e) => HandleCategory(e)}>{CategoryName} </p>
                 </div>
             </div>
         </>

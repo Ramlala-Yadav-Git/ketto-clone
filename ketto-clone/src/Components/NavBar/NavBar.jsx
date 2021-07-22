@@ -53,7 +53,7 @@ export function NavBar() {
                     <WhatappIcon>
                         <div>
                             <div>
-                                <img src="https://i.dlpng.com/static/png/6724083_preview.png" alt="WhatsApp Icon" />
+                                <img src="https://pngimg.com/uploads/whatsapp/whatsapp_PNG95154.png" alt="WhatsApp Icon" />
                             </div>
                             <div>
                                 <span>Chat</span>

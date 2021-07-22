@@ -14,7 +14,6 @@ function App() {
       <ImageGallery />
       <ToolContainer /> */}
 
-
     </div>
   );
 }

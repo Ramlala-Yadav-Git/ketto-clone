@@ -123,8 +123,8 @@ background: linear-gradient(
     font-size: 15px;
 }
 .FeaturedContent > div>button img {
-width: 30px;
+width: 18px;
 position: absolute;
-right: -20px;
-top: -4px;
+right: -15px;
+top: 3px;
 }

@@ -1,7 +1,6 @@
 
 
 .Browse{
-    border: 1px solid black;
     font-family: 'Source Sans Pro',sans-serif;
     
 }
@@ -25,20 +24,40 @@ display: flex;
 justify-content: space-around;
 padding: 15px;
 }
-.BrowseSection >div{
-    border: 1px solid black;
-}
+
 .BrowseSectionLeft{
     padding: 10px;
-    width: 20%;
+    width: 17%;
     background-color: rgb(245,245,245);
     border-radius: 10px;
+    height: 370px;
 }
-.BrowseSectionLeft>div>h2{
+.BrowseSectionLeft>div>h4{
 color: rgb(1,191,189);
 }
+.BrowseSectionLeft>div p{
+    cursor: pointer;
+    font-size: 18px;
+}
+.BrowseSectionLeft>div p:hover{
+    color: rgb(1,191,189);
+}
+.BrowseSectionLeft button{
+    background-color: rgb(1,191,189);
+    color: white;
+    width: 80%;
+    padding: 5%;
+    border: none;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 5%;
+    cursor: pointer;
+}
 .BrowseSectionRight{
-    width: 60%;
+    width: 68%;
+    box-sizing: border-box;
 }
 .BrowseSelection {
     margin: 10px;
@@ -67,4 +86,126 @@ color: rgb(1,191,189);
 .BrowseSelection > div option{
     border: 1px solid gray;
     border-radius: 10px;
+}
+.resetButton{
+    display: inline;
+    margin-left: 87%;
+
+}
+.resetButton button{
+    border: none;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+
+}
+.resetButton button:hover{
+    background-color: rgba(211, 201, 201, 0.5);
+}
+
+
+.BrowseSearch input{
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    font-size: 18px;
+    border-radius: 10px;
+}
+.BrowseSearch input:hover{
+    border:1px solid rgb(1,191,189) ;
+}
+.BrowseShowItems{
+  overflow-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+   
+
+}
+.showData *{
+    margin: 0px;
+    padding: 0px;
+}
+.showData{
+    padding: 0%;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(184, 180, 180, 0.671);
+    border-radius: 15px;
+    max-width: 100%;
+     min-width: 100%;
+
+}
+.showData:hover{
+box-shadow: 2px 2px 2px 2px rgba(134, 133, 133, 0.671);
+cursor: pointer;
+}
+
+.showDataContent{
+    padding: 4%;
+  overflow-wrap: break-word;
+
+}
+.showDataContent >h3{
+    margin-bottom: 10px;
+  overflow-wrap: break-word;
+
+}
+.showDataTitle{
+  overflow-wrap: break-word;
+  margin-bottom: 5%;
+  width: 80%;
+}
+.showDataImage img{
+    width: 100%;
+    border-radius: 10px;
+}
+.showDataLogo {
+    display: flex;
+    margin-bottom:8%;
+
+    
+}
+.showDataLogo p{
+    margin-top:1%;
+    margin-left:4%;
+    
+}
+.showDataLogo img{
+    width: 50px;
+    border-radius: 50%;
+}
+.displayFlex{
+display: flex;
+margin-top: 2%;
+padding: 2%;
+font-size: 15px;
+} 
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.bottom h3{
+    margin-right: 5px;
+}
+.progressBar{
+    width: 100%;
+   margin-bottom: 10px;
+}
+
+.progressBar progress{
+    width: 100%;
+
+}
+.raised{
+    margin-top: 4px;
+    font-size: 17px;
+    margin-left: 2px;
 }
