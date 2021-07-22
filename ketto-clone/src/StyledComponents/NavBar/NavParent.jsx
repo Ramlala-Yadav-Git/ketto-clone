@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const NavParent = styled.div`
 display: flex;
+margin-bottom: 10px;
+border-bottom: 1px solid rgb(255,255,255);
 justify-content: space-around;
 padding: 2px;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -83,11 +85,11 @@ top: 2px;
 
 const WhatappIcon = styled.div`
 border: 2px solid rgb(37,211,102);
+margin-bottom: 10px;
 color:rgb(37,211,102);
-padding: 5px 30px 0px 10px ;
+padding: 3px 30px 1px 10px ;
 border-radius: 5px;
 cursor: pointer;
-
 &>div{
     display: flex;
     font-weight: bold;
@@ -115,8 +117,9 @@ img{
 
 `
 const Fundraiser = styled.div`
+margin-bottom: 10px;
 border: 2px solid rgb(1,191,189);
-padding: 5px 30px 0px 10px ;
+padding: 1px 30px 1px 10px ;
 border-radius: 5px;
 
 a{

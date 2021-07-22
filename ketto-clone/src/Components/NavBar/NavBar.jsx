@@ -2,19 +2,21 @@ import { NavParent, KetoIcon, LeftItems, RightItems, Icons, DropDown, WhatappIco
 
 
 export function NavBar() {
-
+    const HandleClick = () => {
+        document.location.href = "http://localhost:3000"
+    }
     return (
         <><NavParent>
             <LeftItems>
                 <div>
                     <KetoIcon>
-                        <div>
+                        <div onClick={() => HandleClick()}>
                             <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=70&dpr=1.0" alt="Keto_logo" />
                         </div>
                     </KetoIcon>
 
-                    <div>
-                        <a href="!#"> Browse Fundraisers</a>
+                    <div onClick={() => HandleClick()}>
+                        <a href="/browse"> Browse Fundraisers</a>
                     </div>
 
                     <div>

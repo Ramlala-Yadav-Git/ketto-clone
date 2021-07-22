@@ -5,6 +5,7 @@ import { BrowseSearch } from '../Browse/BrowseSearch'
 import { BrowseSelection } from '../Browse/BrowseSelection'
 import { BrowseShow } from '../Browse/BrowseShow'
 import axios from "axios"
+import { NavBar } from "../NavBar/NavBar"
 import { useState, useEffect } from "react"
 export function Browse(params) {
 
@@ -37,40 +38,83 @@ export function Browse(params) {
         setSendData([...filterData])
     }
 
-    const [pay, setPay] = useState({})
+    const [category, setCategory] = useState("")
+    const [type, setType] = useState("")
+    const [location, setLocation] = useState("")
     const HandleChange = (e) => {
-        const payLoad = {
-            ...pay,
-            [e.target.name]: e.target.value
+        if (e.target.name === "category") {
+            setCategory(e.target.value)
+            console.log(category);
+            HandleRender()
+
         }
-        setPay(payLoad)
+        if (e.target.name === "type") {
+            setType(e.target.value)
+            console.log(type);
+            HandleRender()
+
+
+        }
+        if (e.target.name === "location") {
+            setLocation(e.target.value)
+            console.log(location);
+            HandleRender()
+
+
+        }
 
         HandleRender()
 
     }
     const HandleRender = () => {
-        if (pay.category && pay.type && pay.location) {
+        if (category !== "" && type !== "" && location !== "") {
             const filterData = showData.filter((e) => {
-                return (e.category.toLowerCase() === pay.category.toLowerCase() && e.type.toLowerCase() === pay.type.toLowerCase() && e.location.toLowerCase() === pay.location.toLowerCase())
+                return (e.category.toLowerCase() === category.toLowerCase() && e.type.toLowerCase() === type.toLowerCase() && e.location.toLowerCase() === location.toLowerCase())
             })
             setSendData(filterData)
         }
-        else if (pay.category && pay.type) {
+        else if (category !== "" && type !== "") {
             const filterData = showData.filter((e) => {
-                return (e.category.toLowerCase() === pay.category.toLowerCase() && e.type.toLowerCase() === pay.type.toLowerCase())
+                return (e.category.toLowerCase() === category.toLowerCase() && e.type.toLowerCase() === type.toLowerCase())
             })
             setSendData(filterData)
         }
-        else if (pay.category) {
+        else if (category !== "" && location !== "") {
             const filterData = showData.filter((e) => {
-                return (e.category.toLowerCase() === pay.category.toLowerCase())
+                return (e.category.toLowerCase() === category.toLowerCase() && e.location.toLowerCase() === location.toLowerCase())
+            })
+            setSendData(filterData)
+        }
+        else if (type !== "" && location !== "") {
+            const filterData = showData.filter((e) => {
+                return (e.type.toLowerCase() === type.toLowerCase() && e.location.toLowerCase() === location.toLowerCase())
+            })
+            setSendData(filterData)
+        }
+        else if (category !== "") {
+            const filterData = showData.filter((e) => {
+                return (e.category.toLowerCase() === category.toLowerCase())
+            })
+            setSendData([...filterData])
+        }
+        else if (location !== "") {
+            const filterData = showData.filter((e) => {
+                return (e.location.toLowerCase() === location.toLowerCase())
+            })
+            setSendData([...filterData])
+        }
+        else if (type !== "") {
+            const filterData = showData.filter((e) => {
+                return (e.type.toLowerCase() === type.toLowerCase())
             })
             setSendData([...filterData])
         }
 
     }
     const HandleReset = () => {
-        setPay({})
+        setCategory("")
+        setLocation("")
+        setType("")
         setSendData(showData)
     }
     const HandleSearchChange = (e) => {
@@ -86,6 +130,7 @@ export function Browse(params) {
 
     return (
         <>
+            <NavBar />
             <div className={styles.Browse}>
 
 
@@ -123,16 +168,21 @@ export function Browse(params) {
 
                         <div className={styles.BrowseShowItems}>
                             <>
+
                                 {
-                                    sendData.map((e) => {
+
+
+                                    sendData.length !== 0 ? sendData.map((e) => {
                                         return (
                                             <BrowseShow
                                                 key={e.id}
                                                 image={e.image} title={e.title} logo={e.logo} by={e.by} amount={e.amount} progress={e.progress} lastDonation={e.lastDonation} daysLeft={e.daysLeft} supporters={e.supporters}
                                             />
                                         )
-                                    })
+                                    }) : <div>Not Matching Data</div>
+
                                 }
+
                             </>
 
                         </div>

@@ -43,6 +43,7 @@ font-size: 17px;
 }
 .FundRaiserVideo > video{
     width: 300px;
+    border-radius: 20px;
 }
 .GrayColor{
 color: rgb(177,177,177);
