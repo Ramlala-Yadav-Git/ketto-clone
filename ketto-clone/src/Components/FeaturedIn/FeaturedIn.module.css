@@ -1,0 +1,16 @@
+.feature{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgba(63, 67, 70, 0.233);
+    text-align: center;
+background-color: rgba(218, 236, 236, 0.767);    
+padding-left: 15%;
+border: 1px solid rgba(219, 216, 216, 0.562);
+ 
+}
+
+.carousel-indicators{
+    background-color: rgba(63, 67, 70, 0.233);
+    width:1400px
+}
+

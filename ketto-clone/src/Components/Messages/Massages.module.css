@@ -1,0 +1,110 @@
+.Messages{
+    margin-top: 800px;
+    font-family: sans-serif;
+}
+.button{
+text-align: center;
+margin-bottom: 100px;    
+}
+.button .fundraiser{
+font-family: sans-serif;
+background-color: rgb(3,156,154);
+border: none;
+text-transform: uppercase;
+padding: 20px;
+color: white;
+font-weight: bold;
+font-size: 15px;
+width: 23%;
+border-radius: 5px;
+box-shadow: 2px 2px 2px 2px solid rgb(193, 216, 216);
+cursor: pointer;
+margin-right: 40px;
+}
+.button .fundraiser:hover{
+    background-color:rgb(1, 136, 134) ;
+}
+.button .talk{
+background-color: white;
+border: 2px solid rgb(3,156,154);
+text-transform: uppercase;
+padding: 20px;
+color:rgb(3,156,154) ;
+font-weight: bold;
+font-size: 15px;
+width: 23%;
+margin-left: 40px;
+border-radius: 8px;
+box-shadow: 2px 2px 2px 2px solid rgb(193, 216, 216);
+cursor: pointer;
+
+}
+.button .talk:hover{
+    background-color:rgb(1, 136, 134) ;
+    color: white;
+}
+.chat{
+    display: flex;
+    justify-content: space-around;
+}
+.site{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -12px;
+}
+.site > div{
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    padding-top: 9px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(187, 184, 184, 0.39);
+}
+.site p{
+    margin-top: 8px;
+}
+
+.site  i{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.face{
+    display: flex;
+    background-color: rgb(53,79,132);
+    color: white;
+
+}
+.face:hover{
+background-color:rgb(11, 49, 131) ;
+cursor: pointer;
+}
+.whats{
+    display: flex;
+    background-color: rgb(19,203,106);
+    color: white;
+}
+.whats:hover{
+ background-color: rgb(3, 155, 74);
+
+cursor: pointer;
+}
+
+.causes{
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+.causes > h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    color:rgb(68,68,68) ;
+    text-align: center;
+}
+.causes >p{
+    color: gray;
+}

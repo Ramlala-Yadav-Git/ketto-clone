@@ -1,4 +1,4 @@
-//import styled from "styled-components";
+import styled from "styled-components";
 import { SingleImageDiv } from "./SingleImageDiv";
 const Gallery = styled.div`
   width: 90vw;

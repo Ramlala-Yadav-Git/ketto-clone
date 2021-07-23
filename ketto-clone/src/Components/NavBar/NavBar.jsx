@@ -1,26 +1,39 @@
 import { NavParent, KetoIcon, LeftItems, RightItems, Icons, DropDown, WhatappIcon, SearchIcon, Fundraiser } from "../../StyledComponents/NavBar/NavParent";
-
-
+import styles from "../NavBar/NavBar.module.css";
+import { Link } from "react-router-dom"
+import { useRef } from "react";
 export function NavBar() {
+    const HandleClick = () => {
+        document.location.href = "http://localhost:3000"
+    }
+
 
     return (
         <><NavParent>
             <LeftItems>
                 <div>
                     <KetoIcon>
-                        <div>
+                        <div onClick={() => HandleClick()}>
                             <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=70&dpr=1.0" alt="Keto_logo" />
                         </div>
                     </KetoIcon>
 
-                    <div>
-                        <a href="!#"> Browse Fundraisers</a>
+                    <div onClick={() => HandleClick()} >
+                        <a href="/browse"> Browse Fundraisers</a>
                     </div>
 
                     <div>
                         <DropDown>
-                            <div>
-                                <a href="!#"> Fundraise For</a>
+                            <div className={styles.parent}>
+                                <span> Fundraise For</span>
+                            </div>
+                            <div id={styles.hidden} >
+
+                                <p >Medical Treatment</p>
+                                <p >NGO / Charity</p>
+                                <p>Other Cause</p>
+
+
 
                             </div>
                             <div>
@@ -53,7 +66,7 @@ export function NavBar() {
                     <WhatappIcon>
                         <div>
                             <div>
-                                <img src="https://i.dlpng.com/static/png/6724083_preview.png" alt="WhatsApp Icon" />
+                                <img src="https://pngimg.com/uploads/whatsapp/whatsapp_PNG95154.png" alt="WhatsApp Icon" />
                             </div>
                             <div>
                                 <span>Chat</span>
