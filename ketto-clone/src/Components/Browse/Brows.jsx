@@ -7,8 +7,10 @@ import { BrowseShow } from '../Browse/BrowseShow'
 import axios from "axios"
 import { NavBar } from "../NavBar/NavBar"
 import { useState, useEffect } from "react"
+import { InputForm } from "../InputForm"
 export function Browse(params) {
-
+    const [ShowForm, setShowForm] = useState(false)
+    const [close, setClose] = useState(false)
     const [showData, setShowData] = useState([])
     const [sendData, setSendData] = useState(showData)
 
@@ -127,6 +129,19 @@ export function Browse(params) {
         }
 
     }
+    const HandleShowForm = () => {
+        setShowForm(!ShowForm)
+        setClose(!close)
+
+        getData()
+
+    }
+    const HandleClose = () => {
+        setShowForm(!ShowForm)
+        setClose(!close)
+        getData()
+
+    }
 
     return (
         <>
@@ -150,8 +165,19 @@ export function Browse(params) {
                         <BrowseSectionLeft CategoryName={"Women & Girls"} HandleCategory={(e) => HandleCategory(e)} />
                         <BrowseSectionLeft CategoryName={"Animals"} HandleCategory={(e) => HandleCategory(e)} />
                         <hr />
-                        <button>Start a Fundraiser</button>
+                        <button onClick={() => HandleShowForm()}>Start a Fundraiser</button>
                     </div>
+                    <div >
+                        {
+                            close && <p onClick={() => HandleClose()} className={styles.close}>close</p>
+
+                        }
+                        {
+                            ShowForm && <InputForm status={ShowForm} />
+                        }
+
+                    </div>
+
                     <div className={styles.BrowseSectionRight}>
                         <div className={styles.BrowseSearch}>
                             <BrowseSearch HandleSearchChange={(event) => HandleSearchChange(event)} />
@@ -176,7 +202,7 @@ export function Browse(params) {
                                         return (
                                             <BrowseShow
                                                 key={e.id}
-                                                image={e.image} title={e.title} logo={e.logo} by={e.by} amount={e.amount} progress={e.progress} lastDonation={e.lastDonation} daysLeft={e.daysLeft} supporters={e.supporters}
+                                                image={e.image} title={e.title} logo={e.image} by={e.by} amount={e.amount} progress={e.progress} lastDonation={e.lastDonation} daysLeft={e.daysLeft} supporters={e.supporters}
                                             />
                                         )
                                     }) : <div>Not Matching Data</div>

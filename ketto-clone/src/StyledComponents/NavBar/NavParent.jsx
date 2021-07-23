@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const NavParent = styled.div`
 display: flex;
-margin-bottom: 10px;
+margin-bottom: 1px;
 border-bottom: 1px solid rgb(255,255,255);
 justify-content: space-around;
 padding: 2px;
@@ -87,7 +87,7 @@ const WhatappIcon = styled.div`
 border: 2px solid rgb(37,211,102);
 margin-bottom: 10px;
 color:rgb(37,211,102);
-padding: 3px 30px 1px 10px ;
+padding: 1px 30px 3px 10px ;
 border-radius: 5px;
 cursor: pointer;
 &>div{

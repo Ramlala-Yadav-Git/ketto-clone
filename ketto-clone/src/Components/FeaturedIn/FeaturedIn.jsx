@@ -26,11 +26,11 @@ export function FeaturedIn(params) {
                     />
                 </Carousel.Item>
                 <Carousel.Item>
-                    {/* <img
+                    {<img
                         className="d-block w-10"
                         src="https://ketto.gumlet.io/assets/images/homepage/featuredImg/Featured_v1.png?w=auto&dpr=1.0"
                         alt="First slide"
-                    /> */}
+                    />}
                     <Carousel.Caption>
                         <h3>Second slide label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

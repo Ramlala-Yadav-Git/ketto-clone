@@ -1,5 +1,6 @@
 import { NavParent, KetoIcon, LeftItems, RightItems, Icons, DropDown, WhatappIcon, SearchIcon, Fundraiser } from "../../StyledComponents/NavBar/NavParent";
-import styles from "../NavBar/NavBar.module.css"
+import styles from "../NavBar/NavBar.module.css";
+import { Link } from "react-router-dom"
 import { useRef } from "react";
 export function NavBar() {
     const HandleClick = () => {

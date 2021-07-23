@@ -8,7 +8,6 @@ import { SuccessStoriesContainer } from "../SuccessSlider/SuccessStoriesContaine
 import { ToolContainer } from "../ToolCategories/ToolContainer";
 import { FeaturedIn } from "../FeaturedIn/FeaturedIn"
 
-
 export function Home() {
 
 
@@ -22,7 +21,6 @@ export function Home() {
             <ImageGallery />
             <ToolContainer />
             <SuccessStoriesContainer />
-            <FeaturedIn />
 
         </>
     )

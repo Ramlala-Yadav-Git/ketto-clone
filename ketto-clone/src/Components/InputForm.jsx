@@ -2,19 +2,21 @@ import { useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
 // npm install --save-dev @iconify/react @iconify-icons/bx
-//import { Icon, InlineIcon } from "@iconify/react";
-//import bxsUser from "@iconify-icons/bx/bxs-user";
-
-export function InputForm() {
-  const FormDiv = styled.div`
-    width: 100%;
+// import { Icon, InlineIcon } from "@iconify/react";
+// import bxsUser from "@iconify-icons/bx/bxs-user";
+const FormDiv = styled.div`
+    width: 40%;
     margin: auto;
-    background: #333;
+    position: absolute;
+    border-radius: 20px;
+    padding-top: 10px;
+    left: 350px;
+    top: 525px;
     & > form {
       background-color: #fff;
-      width: 500px;
+      border: 2px solid rgb(1,191,189);
+      width: 95%;
       margin: auto;
-      border: 1px solid #333;
       border-radius: 15px;
       display: flex;
       flex-direction: column;
@@ -56,6 +58,8 @@ export function InputForm() {
       }
     }
   `;
+export function InputForm({ status }) {
+
   const [title, setTitle] = useState("");
   const [filePath, setFilePath] = useState("");
   const [url, setUrl] = useState("");
@@ -67,7 +71,7 @@ export function InputForm() {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const reader = new FileReader();
     reader.onload = () => {
       if (reader.readyState === 2) {
@@ -81,16 +85,17 @@ export function InputForm() {
     };
     reader.readAsDataURL(filePath);
 
-    console.log("filePath", filePath);
-    console.log("url", url);
+    // console.log("filePath", filePath);
+    //console.log("url", url);
     postData();
   };
 
   function postData() {
-    let supporters = Math.random() * 100000000;
-    let progress = Math.random() * 101;
-    let lastDonation = Math.random() * 30;
+    let supporters = Math.floor(Math.random() * 10000);
+    let progress = Math.floor(Math.random() * 101);
+    let lastDonation = Math.floor(Math.random() * 30);
     let type = "";
+    let raise = (amount)
 
     if (supporters > 1000) {
       type = "trending";
@@ -100,13 +105,12 @@ export function InputForm() {
     if (url === "") {
       return;
     }
-    const prop = {
+    const payLoad = {
       image: url,
       title: title,
       category: category,
-      logo: url,
       location: location,
-      amount: amount,
+      amount: raise,
       by: `by ${name}`,
       type: type,
       supporters: supporters,
@@ -114,11 +118,13 @@ export function InputForm() {
       lastDonation: lastDonation,
       daysLeft: days,
     };
-    axios.post("http://localhost:3004/fundraiser", prop);
+    axios.post("http://localhost:3004/fundraiser", payLoad);
+    console.log((payLoad));
   }
 
   const handleChange = (e) => {
-    console.log(e.target, e.target.name);
+    //  e.preventDefault()
+    //console.log(e.target, e.target.name);
     if (e.target.name === "title") {
       setTitle(e.target.value);
     } else if (e.target.name === "email") {
@@ -142,7 +148,7 @@ export function InputForm() {
 
   return (
     <FormDiv>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <h3>Start your fundraiser</h3>
         <input
           type="file"
@@ -153,13 +159,13 @@ export function InputForm() {
         <select name="category" onChange={handleChange}>
           <option value="education">Education</option>
           <option value="medical">Medical</option>
-          <option value="women & girls">Women & Girls</option>
+          <option value="women and girls">Women and Girls</option>
           <option value="animals">Animals</option>
         </select>
         <input
           type="text"
           name="title"
-          value={title}
+          // value={title}
           placeholder="Reason"
           onChange={handleChange}
         />
@@ -167,21 +173,21 @@ export function InputForm() {
         <input
           type="text"
           name="name"
-          value={name}
+          // value={name}
           placeholder="Name"
           onChange={handleChange}
         />
         <input
           type="email"
           name="email"
-          value={email}
+          // value={email}
           placeholder="Email"
           onChange={handleChange}
         />
         <input
           type="tel"
           name="mobile"
-          value={mobile}
+          // value={mobile}
           placeholder="Mobile"
           onChange={handleChange}
         />
@@ -200,17 +206,17 @@ export function InputForm() {
         <input
           type="text"
           name="location"
-          value={location}
+          // value={location}
           placeholder="location"
           onChange={handleChange}
         />
         <p>
           Already have an account?<a href="/">Login</a>{" "}
         </p>
-        <button type="submit">Create fundraiser</button>
+        <button type="submit" >Create fundraiser </button>
       </form>
       <p>
-        Are you an NGO?<a href="/">Apply here</a>
+        {/* Are you an NGO?<a href="/">Apply here</a> */}
       </p>
     </FormDiv>
   );
