@@ -11,9 +11,16 @@ export function SingleStory({ prop }) {
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px  rgba(204, 204, 195, 0.486);
+    border-radius: 15px;
     & > img {
       margin-right: 15px;
     }
+  & >div{
+    padding: 10px;
+  }
     & > div > h2 {
       margin: 0;
     }
@@ -86,21 +93,24 @@ export function SingleStory({ prop }) {
   `;
   console.log(prop);
   return (
-    <SoloStory>
-      <img src={prop.image} alt="success_story_image" />
-      <div>
-        <h2>{prop.title}</h2>
-        <p>
-          {prop.description.slice(0, 480)}...<a href="/">Read more</a>
-        </p>
+    <>
+
+      <SoloStory>
+        <img src={prop.image} alt="success_story_image" />
         <div>
-          <span>Subscribe to read such inspiring stories</span>
-          <a href="/">
-            <Icon icon={whatsappIcon} />
-            Subscribe
-          </a>
+          <h2>{prop.title}</h2>
+          <p>
+            {prop.description.slice(0, 480)}...<a href="/">Read more</a>
+          </p>
+          <div>
+            <span>Subscribe to read such inspiring stories</span>
+            <a href="/">
+              <Icon icon={whatsappIcon} />
+              Subscribe
+            </a>
+          </div>
         </div>
-      </div>
-    </SoloStory>
+      </SoloStory>
+    </>
   );
 }

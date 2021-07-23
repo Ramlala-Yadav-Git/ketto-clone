@@ -13,6 +13,11 @@ const StoryContainer = styled.div`
   width: 90vw;
   margin: auto;
 `;
+const StoryContainerHeader = styled.div`
+text-align: center;
+color: rgb(68,68,68);
+font-size: 22px;
+`
 export function SuccessStoriesContainer() {
   const [counter, setCounter] = useState(0);
   const length = 4;
@@ -62,25 +67,32 @@ export function SuccessStoriesContainer() {
         setCounter(counter - 1);
       }
     }
-    console.log(counter);
+    // console.log(counter);
   };
   return (
-    <StoryContainer>
-      <Icon
-        icon={arrowLeftAlt2}
-        width="50px"
-        height="50px"
-        color="#01bfbd"
-        onClick={() => handleCounter(-1)}
-      />
-      <SingleStory prop={stories[counter]} />
-      <Icon
-        icon={arrowRightAlt2}
-        width="50px"
-        height="50px"
-        color="#01bfbd"
-        onClick={() => handleCounter(1)}
-      />
-    </StoryContainer>
+    <>
+      <StoryContainerHeader>
+        <div>
+          <h1>Success Stories</h1>
+        </div>
+      </StoryContainerHeader>
+      <StoryContainer>
+        <Icon
+          icon={arrowLeftAlt2}
+          width="50px"
+          height="50px"
+          color="#01bfbd"
+          onClick={() => handleCounter(-1)}
+        />
+        <SingleStory prop={stories[counter]} />
+        <Icon
+          icon={arrowRightAlt2}
+          width="50px"
+          height="50px"
+          color="#01bfbd"
+          onClick={() => handleCounter(1)}
+        />
+      </StoryContainer>
+    </>
   );
 }

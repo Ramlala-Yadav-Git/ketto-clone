@@ -1,10 +1,12 @@
 import { NavParent, KetoIcon, LeftItems, RightItems, Icons, DropDown, WhatappIcon, SearchIcon, Fundraiser } from "../../StyledComponents/NavBar/NavParent";
-
-
+import styles from "../NavBar/NavBar.module.css"
+import { useRef } from "react";
 export function NavBar() {
     const HandleClick = () => {
         document.location.href = "http://localhost:3000"
     }
+
+
     return (
         <><NavParent>
             <LeftItems>
@@ -15,14 +17,22 @@ export function NavBar() {
                         </div>
                     </KetoIcon>
 
-                    <div onClick={() => HandleClick()}>
+                    <div onClick={() => HandleClick()} >
                         <a href="/browse"> Browse Fundraisers</a>
                     </div>
 
                     <div>
                         <DropDown>
-                            <div>
-                                <a href="!#"> Fundraise For</a>
+                            <div className={styles.parent}>
+                                <span> Fundraise For</span>
+                            </div>
+                            <div id={styles.hidden} >
+
+                                <p >Medical Treatment</p>
+                                <p >NGO / Charity</p>
+                                <p>Other Cause</p>
+
+
 
                             </div>
                             <div>

@@ -8,6 +8,7 @@ box-sizing: border-box;
     text-align: center;
     font-weight: 800;
     color: rgb(29, 28, 28);
+    margin-bottom: 10px;
 }
 .FundRaiserSteps{
     display: flex;
@@ -37,12 +38,13 @@ color: rgb(49, 49, 49);
 font-size: 17px;
 }
 .FundRaiserVideo{
-    width: 30%;
+    width: 40%;
     float: left;
+    margin-top: 20px;
     
 }
 .FundRaiserVideo > video{
-    width: 300px;
+    width: 330px;
     border-radius: 20px;
 }
 .GrayColor{

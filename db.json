@@ -27,7 +27,7 @@
             "daysLeft": "53",
             "supporters": "103333",
             "category": "medical",
-            "type": "taxBenifit",
+            "type": "taxBenefit",
             "location": "delhi"
         },
         {
@@ -42,7 +42,7 @@
             "daysLeft": "3",
             "supporters": "103543",
             "category": "women",
-            "type": "taxBenifit",
+            "type": "taxBenefit",
             "location": "pune"
         },
         {
@@ -87,7 +87,7 @@
             "daysLeft": "26",
             "supporters": "15555",
             "category": "animals",
-            "type": "taxBenifit",
+            "type": "taxBenefit",
             "location": "mumbai"
         },
         {
@@ -102,7 +102,7 @@
             "daysLeft": "50",
             "supporters": "15555",
             "category": "animals",
-            "type": "taxBenifit",
+            "type": "taxBenefit",
             "location": "delhi"
         },
         {
