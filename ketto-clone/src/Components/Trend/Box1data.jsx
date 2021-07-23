@@ -57,9 +57,12 @@ const Box1data=()=>{
             namesocial5={"Well Wisher"}
             costsocial5={"AED 5,000"}
          
+            arrowimg={""}
+            arrowtext={"I could really use your help right now.You can help me with a contribution as small as ₹ 300"}
 
-            
-    
+            imgupdate={"https://kettocdn.gumlet.io/media/individual/4664000/4664514/image/09a17c749b8cb60daa00813d9325fa76f6b0296b.jpg?w=50&dpr=1.0"}
+             emailupdate={"rajpal@gmail.com"}
+            bodyupdate={"My mother is suffering from breast cancer we need to give her T-dm1(Medecine) which cost is too high, I don't want to loose her,Please help us to overcome this situation,Please remove @ in the link to donate :- [ket.@to/my-mother-is-fighting-for-her-life-and-we-need-your-support-to-save-her-345438] Or            search Alka Mishra on ketto to donate "}
     />
     
 
