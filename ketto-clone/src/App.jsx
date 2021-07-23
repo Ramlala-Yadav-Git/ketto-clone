@@ -1,10 +1,9 @@
 import React from "react";
-import {Login} from "./Components/Login/Login"
-
+import { Path } from "./Components/Route/Path"
 function App() {
   return (
     <div>
-      <Login/>
+      <Path />
     </div>
   );
 }

@@ -37,7 +37,6 @@ body{
 display: flex;
 justify-content: space-around;
 padding: 40px;
- border: 1px solid black;
 /* background-image: linear-gradient(to bottom right, rgb(230, 240, 240), rgb(227, 231, 233)); */
 background-color: rgb(255,255,255);
 }
@@ -73,7 +72,7 @@ color: rgb(1,191,189);
     cursor: pointer;
 }
 .BrowseSectionRight{
-    width: 64%;
+    width: 75%;
     box-sizing: border-box;
 }
 .BrowseSelection {
@@ -125,7 +124,7 @@ color: rgb(1,191,189);
 
 .BrowseSearch input{
     padding: 14px;
-    width: 95%;
+    width: 100%;
     outline: none;
     border: 1px solid rgba(128, 128, 128, 0.623);
     font-size: 18px;
@@ -243,7 +242,7 @@ font-size: 15px;
 .close{
 z-index: 10;
 position: absolute;
-left: 800px;
+left: 750px;
 top: 540px;
 font-weight: bold;
 text-transform: uppercase;
@@ -252,8 +251,60 @@ border: 1px solid rgb(1,191,189);
 padding-left: 10px;
 padding-right: 10px;
 border-radius: 20px;
-color: rgba(255, 0, 0, 0.719);
+color: rgba(236, 8, 8, 0.719);
 }
 .close:hover{
     background-color: rgba(204, 6, 6, 0.185);
+}
+#clock{
+    margin-right: 2px;
+    margin-top: 5px;
+}
+#heart{
+    margin-right: 3px;
+    margin-top: 5px;
+    color: rgb(179, 3, 3);
+    font-size: 20px;
+}
+.fbwt{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+#fb{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-right: 7px;
+
+}
+
+.facebook{
+    display: flex;
+   border: 1px solid rgb(59,89,152);
+   width: 45%;
+   text-align: center;
+   padding: 5px;
+   border-radius: 5px;
+   color:rgb(60, 98, 180) ;
+}
+.facebook p{
+    margin-top: 2px;
+    font-weight: bold;
+}
+.donateButton{
+    display: flex;
+   width: 45%;
+   text-align: center;
+   padding: 5px;
+   background-color: rgb(1,191,189);
+   border-radius: 5px;
+}
+.donateButton button{
+    border: none;
+    background-color: rgb(1,191,189);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 25px;
 }

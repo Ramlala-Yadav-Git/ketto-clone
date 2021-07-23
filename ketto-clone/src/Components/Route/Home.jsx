@@ -9,7 +9,6 @@ import { ToolContainer } from "../ToolCategories/ToolContainer";
 import { FeaturedIn } from "../FeaturedIn/FeaturedIn";
 import { Footer } from "../Footer/Footer"
 
-
 export function Home() {
 
 
@@ -17,13 +16,13 @@ export function Home() {
         <>
             <NavBar />
             <SectionFirst />
-            <Data />
+            <FeaturedIn />
+
             <FundRaiserSteps />
             <Massages />
             <ImageGallery />
             <ToolContainer />
             <SuccessStoriesContainer />
-            <FeaturedIn />
             <Footer />
 
         </>

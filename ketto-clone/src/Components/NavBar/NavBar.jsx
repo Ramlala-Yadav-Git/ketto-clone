@@ -79,7 +79,7 @@ export function NavBar() {
                         </div>
                     </Fundraiser>
                     <div>
-                        <a href="!#">Sign In</a>
+                        <a href="/signin">Sign In</a>
                     </div>
 
 

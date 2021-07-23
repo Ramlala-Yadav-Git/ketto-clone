@@ -1,3 +1,5 @@
+
+
 .login{
     font-size: 26px;
     color: #444;
@@ -80,7 +82,7 @@
     font-size: 14px;
     line-height: 15px;
     cursor: pointer;
-    margin-left:80px;
+    margin-left:20px;
 }
 .tp{
     width:95%;
@@ -124,9 +126,10 @@
     margin-top:85px;
 }
 .right img{
-    height:90%;
-    margin-left:-30px;
+    height:80%;
+    margin-left:-20px;
     margin-right:20px;
+    margin-top: -5px;
 }
 .right>button:nth-child(2){
     width: 232px;
@@ -136,10 +139,32 @@
     line-height: 31px;
     border: none;
     border-radius: 4px;
-    background-color: #4267B2;
     margin-top:40px;
 }
-.right>button:nth-child(2)>i{
-    margin-left:-9px;
-    margin-right:10px
+
+.g{
+   border: 1px solid gray;
+    background-color: #4267B2;
+    width: 78%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 2px;
+position: relative;
+}
+.g button{
+    border: none;
+    background-color:#4267B2;
+    color: white;
+    margin-left: 30px;
+    margin-top: 1px;
+width: 80%;
+position: absolute;
+}
+.right i{
+width: 2px;
+font-size: 28px;
+margin-top: 2px;
+margin-left: 10px;
+z-index: 5;
+color: white;
 }

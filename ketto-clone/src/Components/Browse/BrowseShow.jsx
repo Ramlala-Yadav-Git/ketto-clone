@@ -30,15 +30,30 @@ export function BrowseShow({ image, title, logo, by, amount, progress, lastDonat
                     <p>Last donation {lastDonation} ago</p>
                     <div className={styles.bottom}>
                         <div className={styles.displayFlex} >
+                            <i className="far fa-clock" id={styles.clock} ></i>
+
                             <h3>{daysLeft}</h3>
                             <span>Days Left</span>
                         </div>
                         <div className={styles.displayFlex}>
 
-                            <h3>{supporters}</h3><span>Supporters</span>
+                            <i className="fas fa-heart" id={styles.heart} ></i>
+                            <h3>{supporters}</h3>
+
+                            <span>Supporters</span>
                         </div>
 
                     </div>
+                    <div className={styles.fbwt}>
+                        <div className={styles.facebook}>
+                            <i className="fab fa-facebook-square" id={styles.fb}></i>
+                            <p>Share</p>
+                        </div>
+                        <div className={styles.donateButton}>
+                            <button>Donate</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>

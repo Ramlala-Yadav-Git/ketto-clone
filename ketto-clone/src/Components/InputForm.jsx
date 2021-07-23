@@ -10,8 +10,9 @@ const FormDiv = styled.div`
     position: absolute;
     border-radius: 20px;
     padding-top: 10px;
-    left: 350px;
+    left: 310px;
     top: 525px;
+    
     & > form {
       background-color: #fff;
       border: 2px solid rgb(1,191,189);
@@ -119,7 +120,7 @@ export function InputForm({ status }) {
       daysLeft: days,
     };
     axios.post("http://localhost:3004/fundraiser", payLoad);
-    console.log((payLoad));
+    /// console.log((payLoad));
   }
 
   const handleChange = (e) => {
