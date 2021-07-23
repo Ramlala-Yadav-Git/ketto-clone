@@ -10,7 +10,7 @@ export const Data = () => {
           "https://kettocdn.gumlet.io/media/campaign/167000/167947/image/wid57beaf6d360986134ecdbd89657dd6a2b901a548.jpg?w=320&dpr=1.0"
         }
         heading={
-          "This fundraiser is in an urgent need of funds Wife Fears She Will Lose ... "
+          "This fundraiser is in an urgent need of funds Wife Fears She Will Lose The Father.... "
         }
         img={
           "https://kettocdn.gumlet.io/media/individual/1358000/1358229/image/5e58e4fc7b807.jpg?w=50&dpr=1.0"
@@ -20,8 +20,6 @@ export const Data = () => {
         reduce={"900000"}
         watch={"81 days left"}
         heart={"4767"}
-        progress={70}
-
       />
 
       <Trend
@@ -30,17 +28,12 @@ export const Data = () => {
         }
         heading={"Schooling Special needs Children with Custom Education"}
         img={
-
-            "https://kettocdn.gumlet.io/media/ngo/2169000/2169187/image/607ea638e3612.jpg?w=50&dpr=1.0"        }
-        paragraph={"by Nithilyam Spastic"}
-
-          // "https://kettocdn.gumlet.io/media/ngo/2169000/2169187/image/607ea638e3612.jpg?w=50&dpr=1.0"}
-        paragraph={"by Nithilyam Spastic..."}
+          "https://kettocdn.gumlet.io/media/ngo/2169000/2169187/image/607ea638e3612.jpg?w=50&dpr=1.0"}
+        paragraph={"by Nithilyam Spastic Children welfare trust"}
         price={"₹ 32,49,786"}
         reduce={"40,00,000"}
         watch={"27 days left"}
         heart={"1647"}
-        progress={50}
       />
 
       <Trend
@@ -48,7 +41,7 @@ export const Data = () => {
           " https://kettocdn.gumlet.io/media/campaign/378000/378891/image/wid608956d568e62.jpeg?w=320&dpr=1.0"
         }
         heading={
-          "Oxygen For Life - A Covid Relief Fundraiser by ROTEX 3054"
+          "This fundraiser is in an urgent need of funds Wife Fears She Will Lose The Father.... "
         }
         img={
           "https://kettocdn.gumlet.io/media/individual/3987000/3987657/image/6d559edacac52c84886ce79328b9712e4c2298fb.JPG?w=50&dpr=1.0"
@@ -56,10 +49,8 @@ export const Data = () => {
         paragraph={"by Bhanu Gupta"}
         price={"₹ 17,20,513"}
         reduce={"22,50,000"}
-        watch={"0 days left"}
+        watch={"Fundraiser Ended"}
         heart={"325"}
-        progress={90}
-
       />
     </div>
   );

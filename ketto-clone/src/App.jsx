@@ -1,12 +1,13 @@
+import { Path } from "./Components/Route/Path"
 
-function App() {
+const App=()=>{
 
   return (
-     
     <div>
-      
+      <Path />
     </div>
   );
 }
+
 
 export default App;

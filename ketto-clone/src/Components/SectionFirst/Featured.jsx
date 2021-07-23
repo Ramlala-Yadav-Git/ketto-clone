@@ -21,7 +21,7 @@ export function Featured() {
                         </p>
                         <button>
                             DONATE NOW
-                            <img src="/forwardArrow.png" alt="F" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-V_iCYG69_2DV65bRvxlL3FgtbqtsW7T_OZBkJtXhMOsR28FBiPuJ3IKaDctkfScfm8uAhlRQYKXgw&usqp=CAU" alt="f" />
                         </button>
                     </div>
                 </div>

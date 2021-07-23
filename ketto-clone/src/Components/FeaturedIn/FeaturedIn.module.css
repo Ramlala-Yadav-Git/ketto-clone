@@ -1,0 +1,27 @@
+
+.feature
+{
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+}
+.trending{
+    padding: 2px;
+}
+.trendingMassage{
+    margin-top: 250px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+}
+.trendingMassage > h2{
+    font-weight: bolder;
+    font-size: 37px;
+    color: rgb(67,67,67);
+
+}
+.trendingMassage > p{
+color: rgb(148, 141, 138);
+}
+
+
