@@ -87,7 +87,7 @@ const WhatappIcon = styled.div`
 border: 2px solid rgb(37,211,102);
 margin-bottom: 10px;
 color:rgb(37,211,102);
-padding: 1px 30px 3px 10px ;
+padding: 0px 30px 5px 10px ;
 border-radius: 5px;
 cursor: pointer;
 &>div{
@@ -95,9 +95,10 @@ cursor: pointer;
     font-weight: bold;
 }
 img{
-    width: 20px;
+    width: 18px;
     border-radius:10%;
     margin-right: 5px;
+    margin-bottom: 2px;
 }
 `
 const SearchIcon = styled.div`

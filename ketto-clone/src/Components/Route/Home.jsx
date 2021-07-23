@@ -6,7 +6,9 @@ import { Massages } from "../Messages/Massages"
 import { ImageGallery } from "../ImageGallery/ImageGallery";
 import { SuccessStoriesContainer } from "../SuccessSlider/SuccessStoriesContainer"
 import { ToolContainer } from "../ToolCategories/ToolContainer";
-import { FeaturedIn } from "../FeaturedIn/FeaturedIn"
+import { FeaturedIn } from "../FeaturedIn/FeaturedIn";
+import { Footer } from "../Footer/Footer"
+
 
 export function Home() {
 
@@ -21,6 +23,8 @@ export function Home() {
             <ImageGallery />
             <ToolContainer />
             <SuccessStoriesContainer />
+            <FeaturedIn />
+            <Footer />
 
         </>
     )

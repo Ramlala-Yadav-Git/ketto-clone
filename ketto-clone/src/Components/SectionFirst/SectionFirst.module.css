@@ -58,13 +58,13 @@ margin-top: 40px;
 .ContentDiv > div > p{
 color: rgb(1, 180, 180);
 font-weight: bold;
-margin-bottom: 70px;
+margin-bottom: 25px;
 }
 .Featured{
     display: flex;
     width: 55%;
     position: absolute;
-    top: 580px;
+    top: 550px;
     margin:auto;
     margin-left: 20%;
     padding: 1%;
@@ -79,7 +79,7 @@ margin-bottom: 70px;
 }
 .FeaturedImage > img{
     border-radius: 10px;
-    width: 290px;
+    width: 270px;
 
 }
 
@@ -116,7 +116,7 @@ background: linear-gradient(
 }
 .FeaturedContent > :nth-child(2) >p{
    color: rgb(114, 109, 109);
-   line-height: 24px;
+   line-height: 21px;
    font-size: 17px;
 }
 .FeaturedContent > div >button{

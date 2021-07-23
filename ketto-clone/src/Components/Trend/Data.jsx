@@ -28,7 +28,7 @@ export const Data = () => {
         }
         heading={"Schooling Special needs Children with Custom Education"}
         img={
-            "https://kettocdn.gumlet.io/media/ngo/2169000/2169187/image/607ea638e3612.jpg?w=50&dpr=1.0"        }
+          "https://kettocdn.gumlet.io/media/ngo/2169000/2169187/image/607ea638e3612.jpg?w=50&dpr=1.0"}
         paragraph={"by Nithilyam Spastic Children welfare trust"}
         price={"₹ 32,49,786"}
         reduce={"40,00,000"}

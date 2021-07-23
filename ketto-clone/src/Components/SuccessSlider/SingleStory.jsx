@@ -91,7 +91,6 @@ export function SingleStory({ prop }) {
       }
     }
   `;
-  console.log(prop);
   return (
     <>
 

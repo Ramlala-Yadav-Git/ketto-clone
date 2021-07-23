@@ -75,7 +75,7 @@ export function NavBar() {
                     </WhatappIcon>
                     <Fundraiser>
                         <div>
-                            <a href="!#">Start a Fundraiser</a>
+                            <a href="/browse">Start a Fundraiser</a>
                         </div>
                     </Fundraiser>
                     <div>

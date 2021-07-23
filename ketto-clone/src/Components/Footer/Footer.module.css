@@ -1,26 +1,23 @@
 .maindiv{
     width: 1360px;
-    height:600px; 
-    background-color: #2b5958;
+    height:480px; 
+    background-color: rgb(11,67,65);
 }
 .footer_div{
     width: 1360px;
     height:400px;
-    /* background-color: #2b5958; */
     display: flex;
     padding-top: 60px;
 }
 .left{
     width:260px;
     height:320px;
-    /* background-color:red; */
     margin-left: 10%;
     margin-right: 5%;
 }
 .right{
     width:700px;
     height:320px;
-    /* background-color:red; */
     display: flex;
     justify-content: space-between;
 }
@@ -59,7 +56,6 @@
 }
 .right>div{
     width: 280px;
-     /* background-color:red;  */
     height:280px;
     display:flex;
     flex-direction: column;

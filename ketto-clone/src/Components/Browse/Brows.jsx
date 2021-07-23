@@ -8,6 +8,8 @@ import axios from "axios"
 import { NavBar } from "../NavBar/NavBar"
 import { useState, useEffect } from "react"
 import { InputForm } from "../InputForm"
+import { Footer } from "../Footer/Footer"
+
 export function Browse(params) {
     const [ShowForm, setShowForm] = useState(false)
     const [close, setClose] = useState(false)
@@ -216,6 +218,7 @@ export function Browse(params) {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
