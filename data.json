@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "todos": [
+    {
+      "id": 1
+    },
+    {
+      "title": "hfghg",
+      "img": "https://picsum.photos/200/300",
+      "email": "hg",
+      "phone": "hfgdhgd",
+      "country": "HTML",
+      "id": 2
+    },
+    {
+      "title": "hfghg",
+      "img": "https://picsum.photos/200/300",
+      "email": "hg",
+      "phone": "hfgdhgd",
+      "country": "HTML",
+      "id": 3
+    }
+  ],
+  "cont": [
+    {
+      "id": 1
+    },
+    {
+      "title1": "gfdg",
+      "img": "https://picsum.photos/200/300",
+      "email": "gdfg",
+      "message": "gfdgdfg",
+      "id": 2
+    },
+    {
+      "title1": "gfdg",
+      "img": "https://picsum.photos/200/300",
+      "email": "gdfg",
+      "message": "gfdgdfg",
+      "id": 3
+    }
+  ]
+}

@@ -23,7 +23,6 @@ export function FeaturedIn(params) {
 
             setShowData([...data])
             setSendData([...data])
-            console.log(data);
         })
     }
     return (<>

@@ -7,12 +7,12 @@ border-bottom: 1px solid rgb(255,255,255);
 justify-content: space-around;
 padding: 2px;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 `;
 const LeftItems = styled.div`
 /* border: 1px solid green; */
 display: flex;
 padding: 10px;
+padding-left:0px;
 
 & > div{
     display: flex;
@@ -36,14 +36,13 @@ const RightItems = styled.div`
 & > div{
     display: flex;
     justify-content: space-between;
+    margin-left: -300px;
 }
 & > div > div{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 30px;
 }
-img{
-    width: 10px;
-}
+
 & > div>div > a{
     text-decoration: none;
     color: black;
@@ -76,7 +75,7 @@ a{
     
 }
 img{
-        width: 20px;
+width: 20px;
 position: absolute;
 right: -20px;
 top: 2px;

@@ -144,10 +144,19 @@ export function Browse(params) {
         getData()
 
     }
+    const st = JSON.parse(localStorage.getItem("user"))
+    var user;
+    if (st) {
+        user = st.status;
+
+    }
+    else {
+        user = false
+    }
 
     return (
         <>
-            <NavBar />
+            <NavBar user={user} />
             <div className={styles.Browse}>
 
 

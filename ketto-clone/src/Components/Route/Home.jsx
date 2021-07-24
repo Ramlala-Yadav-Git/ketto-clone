@@ -10,11 +10,18 @@ import { FeaturedIn } from "../FeaturedIn/FeaturedIn";
 import { Footer } from "../Footer/Footer"
 
 export function Home() {
+    const st = JSON.parse(localStorage.getItem("user"))
+    var user;
+    if (st) {
+        user = st.status;
 
-
+    }
+    else {
+        user = false
+    }
     return (
         <>
-            <NavBar />
+            <NavBar user={user} />
             <SectionFirst />
             <FeaturedIn />
 
