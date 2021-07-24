@@ -17,7 +17,7 @@ export const Data = () => {
         }
         paragraph={"By Rachit srishtav"}
         price={"₹ 81,33,415"}
-        reduce={"900000"}
+        reduce={"₹ 900000"}
         watch={"81 days left"}
         heart={"4767"}
       />

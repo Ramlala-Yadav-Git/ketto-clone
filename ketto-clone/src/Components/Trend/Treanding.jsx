@@ -2,7 +2,6 @@ import React from "react"
 import styles from "./Trend.module.css"
 // import { Box1data } from "./Box1data"
 
-
 const Trend = (props) => {
 
 
@@ -16,6 +15,7 @@ const Trend = (props) => {
     return (
         <>
             <div className={styles.Container}>
+
                 <div onClick={() => handleroute()}
                     className={styles.img1}>
                     <img src={props.imgsrc} alt="loading" />
