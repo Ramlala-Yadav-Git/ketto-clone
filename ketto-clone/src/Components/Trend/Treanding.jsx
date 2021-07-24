@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "./Trend.module.css"
 // import { Box1data } from "./Box1data"
- 
 
 const Trend = (props) => {
 

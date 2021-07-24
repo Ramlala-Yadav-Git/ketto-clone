@@ -2,7 +2,7 @@
 
 Ketto.org : Ketto is an Indian online crowdfunding platform, where any individual/organisation across the country can raise funds for causes ranging from medical healthcare to disaster relief.
 
-<img src="/readme/ketto.png" width="400"/>
+<img src="/readme/kettoLogo.svg" width="400"/>
 
 **Our team was given a task to Clone the ketto.org Website.**
 
