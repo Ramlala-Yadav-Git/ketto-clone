@@ -2,7 +2,7 @@
 
 Ketto.org : Ketto is an Indian online crowdfunding platform, where any individual/organisation across the country can raise funds for causes ranging from medical healthcare to disaster relief.
 
-<img src="readme/ketto.png" width="400"/>
+<img src="PreviewImageGallery/ketto.png" width="400"/>
 
 **Our team was given a task to Clone the ketto.org Website.**
 
@@ -32,10 +32,10 @@ npm start
 ## Technologies Used
 
 <p float="left">
-  <img src="readme/html.png" height="150"/>
-  <img src="readme/css.png"  height="150"/> 
-  <img src="readme/JavaScript.png"  height="150"/>
-  <img src="readme/React.png" height="150"/>
+  <img src="PreviewImageGallery/html.png" height="150"/>
+  <img src="PreviewImageGallery/css.png"  height="150"/> 
+  <img src="PreviewImageGallery/JavaScript.png"  height="150"/>
+  <img src="PreviewImageGallery/React.png" height="150"/>
 </p>
 
 ## Features
@@ -51,7 +51,7 @@ Sliders are included in the page, popups are shown when hovered.
 At the bottom section there is a footer, both Header & Footer are same across all the pages.
 The page is responsive for all screen sizes.
 <br/>
-<img src="readme/index.jpeg" width="500"/>
+<img src="PreviewImageGallery/index.jpeg" width="500"/>
 
 The library used for icon is:"https://iconify.design/"
 <br/>
@@ -60,27 +60,44 @@ The library used for icon is:"https://iconify.design/"
 
 Existing user can Login and new user's can SignUp themselves on page.
 From NavigationBar of Landing Page.
-<img src="readme/login.jpeg" width="500"/>
+<img src="PreviewImageGallery/login.jpeg" width="500"/>
 
 After Login user direcly redirect to home page.
 There are many Child pages linked to the Landing page and after login page, but for this clone following pages are made.
 
 ### Fundraiser form page :
+Below images shows steps to donate.
 
-<p float="left">
-  <img src="readme/category.jpeg" width="400"/>
-  <img src="readme/steps.jpeg"  width="400"/> 
+<p float="left">  
+  <img src="PreviewImageGallery/steps.jpeg"  width="400"/> 
+  <img src="PreviewImageGallery/donationForm" width="400">
 </p>
 
+
 There are some Key Features which are added in website clone such as:
+### Special features:
+
+- *Chatbot*
+- *Supporters and Comments*
+- *Easy navigation by category section*
+
+<p>
+<img src="PreviewImageGallery/chatbot.jpeg" width="400"/>
+<img src="PreviewImageGallery/category.jpeg" width="400"/>
+<img src="PreviewImageGallery/supporters.jpeg" width="400">
+<img src="PreviewImageGallery/comments.jpeg" width="400"/>
+</p>
+
+There are som redirected pages and sub features given below:
 
 ### Other features and pages :
 
 <p float="left">
-  <img src="readme/successStory.jpeg" width="400"/>
-  <img src="readme/tools.jpeg"  width="400"/> 
-  <img src="readme/disease.jpeg"  width="400"/>
-  <img src="readme/footer.jpeg" width="400"/>
+  <img src="PreviewImageGallery/patient.jpeg" width="600">
+  <img src="PreviewImageGallery/successStory.jpeg" width="400"/>
+  <img src="PreviewImageGallery/tools.jpeg"  width="400"/> 
+  <img src="PreviewImageGallery/disease.jpeg"  width="400"/>
+  <img src="PreviewImageGallery/footer.jpeg" width="400"/>
 </p>
 
 ## Team Members and Contributors
