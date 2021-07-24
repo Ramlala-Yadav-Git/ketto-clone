@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./Trend.module.css"
-<<<<<<< HEAD
 // import { Box1data } from "./Box1data"
  
 
@@ -11,20 +10,14 @@ const Trend = (props) => {
     const handleroute=()=>{
         document.location.href= "http://localhost:3000/Box1data"
     }
-=======
->>>>>>> 1e5005fbd0613e11b940fc060a1b45a8b84c9b0a
 
 
 
     return (
         <>
             <div className={styles.Container}>
-<<<<<<< HEAD
                 <div onClick={()=>handleroute()} 
                 className={styles.img1}>
-=======
-                <div className="img1">
->>>>>>> 1e5005fbd0613e11b940fc060a1b45a8b84c9b0a
                     <img src={props.imgsrc} alt="loading" />
                 </div>
 
