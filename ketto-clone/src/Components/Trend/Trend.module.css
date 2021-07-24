@@ -299,6 +299,7 @@ margin-top: 15px;
 
   .showcontact{
     display: flex;
+    margin-left: 10px;
 
   }
 
@@ -336,12 +337,15 @@ margin-top: 15px;
 .box1proimg1{
   display: flex;
   gap: 30px;
+  margin-left: 10px;
 }
 
 .box1proimg11{
   display: flex;
   gap: 30px;
   margin-top:20px;
+  margin-left: 10px;
+
 }
 
 .profilebox1{
@@ -388,7 +392,7 @@ margin-top: 15px;
   color:#444;
   border: 1px solid #e8e8e8;
   background-color: rgb(255, 255, 255);
-  width: 330px;
+  width: 350px;
   height:50px;
   margin-top: 70px;
   border-radius: 10px;
@@ -440,7 +444,7 @@ margin-top: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  width: 340px;
+  width: 350px;
   height:100px;
   padding: 3%;
 }
@@ -448,12 +452,13 @@ margin-top: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  width: 330px;
+  width: 350px;
   height:180px;
   padding: 3%;
   overflow-x: hidden;
   overflow-y: hidden;
-  border-bottom: none;
+  margin-top: -15px;
+  
 
 }
 
@@ -507,8 +512,8 @@ justify-content: space-between;
   cursor: pointer;
 }
 .donar1>p:nth-child(1),.donar2>p:nth-child(1){
-  width: 30px;
-  height:30px;
+  width: 50px;
+  height:50px;
   border-radius: 50px;
   border: 1px solid #e8e8e8 ;
   padding: 2%;
@@ -553,8 +558,8 @@ color: #e8e8e8;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  width: 330px;
-  height:400px;
+  width: 350px;
+  height:500px;
   padding: 5%;
 }
 

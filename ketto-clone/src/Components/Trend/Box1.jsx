@@ -725,7 +725,7 @@ const handleprice=()=>{
 
                 <div className={styles.donar2}>
                   <p>
-                    <i style={{ color: "gray" }} class="fas fa-user"></i>{" "}
+                    <i style={{ color: "gray" }} class="fas fa-user"></i>
                   </p>
                   <p>{props.namesocial5}</p>
                   <p>{props.costsocial5}</p>
