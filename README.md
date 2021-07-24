@@ -70,7 +70,7 @@ Below images shows steps to donate.
 
 <p float="left">  
   <img src="PreviewImageGallery/steps.jpeg"  width="400"/> 
-  <img src="PreviewImageGallery/donationForm" width="400">
+  <img src="PreviewImageGallery/donationForm.jpeg" width="400">
 </p>
 
 
@@ -88,7 +88,7 @@ There are some Key Features which are added in website clone such as:
 <img src="PreviewImageGallery/comments.jpeg" width="400"/>
 </p>
 
-There are som redirected pages and sub features given below:
+There are some redirected pages and sub features given below:
 
 ### Other features and pages :
 
