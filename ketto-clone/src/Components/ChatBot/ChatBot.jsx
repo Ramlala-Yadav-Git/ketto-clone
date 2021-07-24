@@ -1,6 +1,6 @@
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
-import { InputForm } from "../InputForm/InputForm";
+import { Browse } from "../Browse/Brows";
 import { Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
 const CHATBOT_THEME = {
   background: "#FFFEFC",
@@ -8,25 +8,25 @@ const CHATBOT_THEME = {
   headerBgColor: "#01bfbd",
   headerFontColor: "#fff",
   headerFontSize: "15px",
-  botBubbleColor: "#333",
+  botBubbleColor: "#059693",
   botFontColor: "#fff",
   userBubbleColor: "#01bfbd",
   userFontColor: "#fff"
 };
 const BotRedirect = () => {
-  return (
-    <Router>
-      <div>
-        <Link to="/form">Form</Link>
-      </div>
+  // return (
+  //   <Router>
+  //     <div>
+  //       <Link to="/browse">Form</Link>
+  //     </div>
 
-      <Switch>
-        <Route exact path="/form">
-          <InputForm />
-        </Route>
-      </Switch>
-    </Router>
-  );
+  //     <Switch>
+  //       <Route exact path="/browse">
+  //         <Browse />
+  //       </Route>
+  //     </Switch>
+  //   </Router>
+  // );
 };
 export const ChatBotHelper = () => {
   const steps = [
@@ -45,7 +45,7 @@ export const ChatBotHelper = () => {
       options: [
         { value: 1, label: "Show categories", trigger: "4" },
         { value: 2, label: "Problem in payment", trigger: "5" },
-        { value: 3, label: "InputForm", trigger: "12" }
+        { value: 3, label: "Input", trigger: "12" }
       ]
     },
     {

@@ -57,7 +57,7 @@ const Trend = (props) => {
 
                 </div>
                 <div className={styles.imgprofile3}>
-                    <button className={styles.share}><i class="fab fa-facebook-square">Share</i></button>
+                    <button className={styles.share}><i className="fab fa-facebook-square">Share</i></button>
                     <button className={styles.delete}>Donate</button>
                 </div>
             </div>

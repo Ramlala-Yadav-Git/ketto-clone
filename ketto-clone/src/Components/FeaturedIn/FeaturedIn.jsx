@@ -25,6 +25,9 @@ export function FeaturedIn(params) {
             setSendData([...data])
         })
     }
+    const HandleFundraiser = () => {
+        document.location.href = "/fundraiser"
+    }
     return (<>
         <div className={styles.trendingMassage}>
             <h2>Trending Fundraisers</h2>
@@ -39,7 +42,7 @@ export function FeaturedIn(params) {
 
                 {
                     sendData.map((e) => {
-                        return <div className={styles.trending}>
+                        return <div className={styles.trending} onClick={() => HandleFundraiser()}>
                             <BrowseShow key={e.id}
                                 image={e.image} title={e.title} logo={e.image} by={e.by} amount={e.amount} progress={e.progress} lastDonation={e.lastDonation} daysLeft={e.daysLeft} supporters={e.supporters} />
                         </div>

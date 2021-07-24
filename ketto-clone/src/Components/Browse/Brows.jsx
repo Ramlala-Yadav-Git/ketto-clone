@@ -9,6 +9,7 @@ import { NavBar } from "../NavBar/NavBar"
 import { useState, useEffect } from "react"
 import { InputForm } from "../InputForm"
 import { Footer } from "../Footer/Footer"
+import { ChatBotHelper } from "../ChatBot/ChatBot"
 
 export function Browse(params) {
     const [ShowForm, setShowForm] = useState(false)
@@ -48,20 +49,18 @@ export function Browse(params) {
     const HandleChange = (e) => {
         if (e.target.name === "category") {
             setCategory(e.target.value)
-            console.log(category);
+            HandleRender()
             HandleRender()
 
         }
-        if (e.target.name === "type") {
+        else if (e.target.name === "type") {
             setType(e.target.value)
-            console.log(type);
             HandleRender()
 
 
         }
-        if (e.target.name === "location") {
+        else if (e.target.name === "location") {
             setLocation(e.target.value)
-            console.log(location);
             HandleRender()
 
 
@@ -72,46 +71,46 @@ export function Browse(params) {
     }
     const HandleRender = () => {
         if (category !== "" && type !== "" && location !== "") {
-            const filterData = showData.filter((e) => {
-                return (e.category.toLowerCase() === category.toLowerCase() && e.type.toLowerCase() === type.toLowerCase() && e.location.toLowerCase() === location.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?category=${category}&type=${type}&location=${location}`).then(({ data }) => {
+                setSendData([...data])
+
+
             })
-            setSendData(filterData)
         }
         else if (category !== "" && type !== "") {
-            const filterData = showData.filter((e) => {
-                return (e.category.toLowerCase() === category.toLowerCase() && e.type.toLowerCase() === type.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?category=${category}&type=${type}`).then(({ data }) => {
+                setSendData([...data])
+
             })
-            setSendData(filterData)
         }
         else if (category !== "" && location !== "") {
-            const filterData = showData.filter((e) => {
-                return (e.category.toLowerCase() === category.toLowerCase() && e.location.toLowerCase() === location.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?category=${category}$location=${location}`).then(({ data }) => {
+                setSendData([...data])
+
             })
-            setSendData(filterData)
         }
         else if (type !== "" && location !== "") {
-            const filterData = showData.filter((e) => {
-                return (e.type.toLowerCase() === type.toLowerCase() && e.location.toLowerCase() === location.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?type=${type}&location=${location}`).then(({ data }) => {
+                setSendData([...data])
+
             })
-            setSendData(filterData)
         }
         else if (category !== "") {
-            const filterData = showData.filter((e) => {
-                return (e.category.toLowerCase() === category.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?category=${category}`).then(({ data }) => {
+                setSendData([...data])
+
             })
-            setSendData([...filterData])
         }
         else if (location !== "") {
-            const filterData = showData.filter((e) => {
-                return (e.location.toLowerCase() === location.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?location=${location}`).then(({ data }) => {
+                setSendData([...data])
+
             })
-            setSendData([...filterData])
         }
         else if (type !== "") {
-            const filterData = showData.filter((e) => {
-                return (e.type.toLowerCase() === type.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?type=${type}`).then(({ data }) => {
+                setSendData([...data])
             })
-            setSendData([...filterData])
         }
 
     }
@@ -124,10 +123,9 @@ export function Browse(params) {
     const HandleSearchChange = (e) => {
         if (e.keyCode === 13) {
 
-            const filterData = showData.filter((el) => {
-                return (el.category.toLowerCase() === e.target.value.toLowerCase() || el.type.toLowerCase() === e.target.value.toLowerCase() || el.location.toLowerCase() === e.target.value.toLowerCase())
+            axios.get(`http://localhost:3004/fundraiser?q=${e.target.value}`).then(({ data }) => {
+                setSendData([...data])
             })
-            setSendData(filterData)
         }
 
     }
@@ -227,6 +225,7 @@ export function Browse(params) {
                     </div>
                 </div>
             </div>
+            <ChatBotHelper />
             <Footer />
         </>
     )

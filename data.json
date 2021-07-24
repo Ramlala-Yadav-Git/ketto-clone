@@ -35,6 +35,14 @@
       "phone": "hfgdhgd",
       "country": "HTML",
       "id": 3
+    },
+    {
+      "title": "ramlala",
+      "img": "https://picsum.photos/200/300",
+      "email": "ramlala_nj2_075@masai.school",
+      "phone": "07024426233",
+      "country": "HTML",
+      "id": 4
     }
   ],
   "cont": [
@@ -54,6 +62,19 @@
       "email": "gdfg",
       "message": "gfdgdfg",
       "id": 3
+    },
+    {
+      "title1": "Ramalala",
+      "img": "https://picsum.photos/200/300",
+      "email": "ramlala_nj2_075@masai.school",
+      "message": "somesh",
+      "id": 4
+    }
+  ],
+  "url": [
+    {
+      "id": 1,
+      "url": ""
     }
   ]
 }

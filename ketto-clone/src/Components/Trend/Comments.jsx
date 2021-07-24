@@ -10,11 +10,6 @@ const Comments = () => {
     const [doc, setdoc] = useState(false)
     const [about1, setabout] = useState(false)
 
-    const [users, Setusers] = useState([])
-    const [mydetails, setMydetails] = useState(false)
-    const [update, setupdate] = useState(false)
-    const [doc, setdoc] = useState(false)
-    const [about1, setabout] = useState(true)
 
 
 
@@ -73,13 +68,13 @@ const Comments = () => {
 
         <div className={styles.apiContainer}>
             <div className={styles.left1}>
-                <p onClick={() => handledeabout()}> <i style={{ color: "#01bfbd" }} class="fas fa-globe"></i>  About</p>
-                <p onClick={() => handlededocument()}> <i class="far fa-file-alt"></i> Documents</p>
+                <p onClick={() => handledeabout()}> <i style={{ color: "#01bfbd" }} className="fas fa-globe"></i>  About</p>
+                <p onClick={() => handlededocument()}> <i className="far fa-file-alt"></i> Documents</p>
                 <p onClick={() => handledeupdata()}>
-                    <i class="fas fa-history"></i>  Updates</p>
+                    <i className="fas fa-history"></i>  Updates</p>
 
                 <p onClick={() => handledetails()}>
-                    <i style={{ color: "grey" }} class="fas fa-comment"></i>
+                    <i style={{ color: "grey" }} className="fas fa-comment"></i>
                     Comments</p>
 
 

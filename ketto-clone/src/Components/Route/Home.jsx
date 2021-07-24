@@ -8,6 +8,7 @@ import { SuccessStoriesContainer } from "../SuccessSlider/SuccessStoriesContaine
 import { ToolContainer } from "../ToolCategories/ToolContainer";
 import { FeaturedIn } from "../FeaturedIn/FeaturedIn";
 import { Footer } from "../Footer/Footer"
+import { ChatBotHelper } from "../ChatBot/ChatBot"
 
 export function Home() {
     const st = JSON.parse(localStorage.getItem("user"))
@@ -24,13 +25,13 @@ export function Home() {
             <NavBar user={user} />
             <SectionFirst />
             <FeaturedIn />
-
             <FundRaiserSteps />
             <Massages />
             <ImageGallery />
             <ToolContainer />
             <SuccessStoriesContainer />
             <Footer />
+            <ChatBotHelper />
 
         </>
     )

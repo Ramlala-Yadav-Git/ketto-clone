@@ -34,7 +34,7 @@ export function SignIn() {
     return <>
         <NavBar />
         <div className={Styles.login}>Register Here ..
-            <i class="far fa-times-circle"></i></div>
+            <i className="far fa-times-circle"></i></div>
         <br />
         <div className={Styles.login_form}>
             <div className={Styles.left}>
@@ -66,7 +66,7 @@ export function SignIn() {
 
                 <button><img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.0" alt="" />Sign in with Google</button>
                 <div className={Styles.g}>
-                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i className="fab fa-facebook-square fa-2x"></i>
                     <button >Continue with Facebook</button>
                 </div>
 

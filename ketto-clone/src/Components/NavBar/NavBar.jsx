@@ -2,8 +2,6 @@ import { NavParent, KetoIcon, LeftItems, RightItems, Icons, DropDown, WhatappIco
 import styles from "../NavBar/NavBar.module.css";
 import stylesp from "../NavBar/Profile.module.css"
 import { Profile } from "./Profile";
-import { Link } from "react-router-dom"
-import { useRef } from "react";
 export function NavBar({ user }) {
     const HandleClick = () => {
         document.location.href = "http://localhost:3000"

@@ -2,7 +2,6 @@
     position: absolute;
     right: 30px;
     z-index: 10;
-   
 }
 
 .profile *{
@@ -35,9 +34,9 @@ margin-left: 0px;
 .des{
     border: 1px solid rgba(177, 183, 184, 0.295);
     background-color: white;
-    box-shadow: 2px 2px 2px 2px rgba(214, 213, 213, 0.644);
+    box-shadow: 2px 2px 2px 2px rgba(214, 213, 213, 0.356);
     margin-top: 38px;
-    display: none;
+   border-radius: 10px;
     
     
 }
@@ -51,7 +50,7 @@ margin-left: 0px;
     cursor: pointer;
 }
 .des > p:hover{
-    color: rgba(4, 127, 146, 0.76);
+    color: rgba(2, 103, 119, 0.76);
 }
 .des > h5{
      padding-bottom:10px ;
@@ -62,4 +61,28 @@ margin-left: 0px;
 }
 .header:hover + .des{
     display: block;
+}
+#details {
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    font-size: 20px;
+    color: rgba(223, 7, 7, 0.623);
+    cursor: pointer;
+    z-index: 20;
+}
+#details:hover{
+    color: red;
+}
+#profileClose {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    font-size: 20px;
+    color: rgba(223, 7, 7, 0.623);
+    cursor: pointer;
+    z-index: 20;
+}
+#profileClose:hover{
+    color: red;
 }

@@ -3,11 +3,20 @@ import styles from "./Trend.module.css"
 import Box1 from "./Box1"
 import { Footer } from "../Footer/Footer"
 import { NavBar } from "../NavBar/NavBar"
+import { ChatBotHelper } from "../ChatBot/ChatBot"
 const Box1data = () => {
 
     const st = JSON.parse(localStorage.getItem("user"));
-    const user = st.status;
-    console.log(user);
+    var user;
+    if (st) {
+        user = st.status;
+
+
+    }
+    else {
+        user = false;
+    }
+    /// console.log(user);
     return (
         <>
             <NavBar user={user} />
@@ -74,7 +83,11 @@ const Box1data = () => {
 
 
             </div>
-            <Footer />
+            <ChatBotHelper />
+            <div className={styles.Footer}>
+                <Footer />
+
+            </div>
         </>
     )
 }

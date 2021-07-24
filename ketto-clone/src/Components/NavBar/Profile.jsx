@@ -1,34 +1,71 @@
-
+import { useState, useEffect } from "react";
 import stylesp from "../NavBar/Profile.module.css"
-
+import axios from "axios";
+import { PersonalDetails } from "../PersonalDetails/PersonalDetails";
 
 export function Profile({ name }) {
+    const [profile, setProfile] = useState(false)
+    const [details, setDetails] = useState(false)
+
     const HandleLogOut = () => {
         localStorage.clear();
         document.location.href = "http://localhost:3000/"
     }
+    const [image, setImage] = useState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HjnpS3HGQonZA7z19MDiAtKiLmnmsGSQGWKo0MSTPy6_L2rQLo_-Wi91M3ZRkNc6-2_qtvzRuBRLLw&usqp=CAU")
 
+    const profileUrl = () => {
+        axios.get("http://localhost:3003/url").then(({ data }) => {
+            if (data.length !== 0) {
+                setImage(data[0].url)
+            }
+        })
+    }
+    const HandleProfileChange = () => {
+        setProfile(!profile)
+    }
+    const HandleShowOption = () => {
+        setDetails(!details)
+    }
+
+    const CloseForm = () => {
+        setProfile(!profile)
+    }
+    const CloseProfile = () => {
+        setDetails(!details)
+
+    }
 
     return (
         <>
 
-            <div className={stylesp.header}>
-                <img src="https://kettocdn.gumlet.io/media/individual/4767000/4767219/image/60facb8ac5fc4.jpg?dpr=1.0&q=70&w=160" alt="profile" />
-                <i class="fas fa-sort-down"></i>
+            <div className={stylesp.header} onClick={() => HandleShowOption()}>
+                <img src={image} alt="profile" />
+                <i className="fas fa-sort-down"></i>
             </div>
-            <div className={stylesp.des}>
-                <h5>{name}</h5>
-                <p>View Profile</p>
-                <hr />
+            {
+                details &&
 
-                <p>My Fundraisers</p>
-                <hr />
-                <p>My Donations</p>
-                <hr />
-                <p>View My Impact</p>
-                <hr />
-                <p onClick={() => HandleLogOut()}> Logout</p>
-            </div>
+                <div className={stylesp.des}>
+                    <i className="far fa-times-circle" id={stylesp.profileClose} onClick={() => CloseProfile()}></i>
+
+                    <h5>{name}</h5>
+                    <p onClick={() => HandleProfileChange()}>Change Profile</p>
+                    <hr />
+
+                    <p>My Fundraisers</p>
+                    <hr />
+                    <p>My Donations</p>
+                    <hr />
+                    <p>View My Impact</p>
+                    <hr />
+                    <p onClick={() => HandleLogOut()}> Logout</p>
+                </div>
+            }
+            {profile && <div>
+                <i className="far fa-times-circle" id={stylesp.details} onClick={() => CloseForm()}></i>
+
+                <PersonalDetails getProfile={() => profileUrl()} />
+            </div>}
 
         </>
     )

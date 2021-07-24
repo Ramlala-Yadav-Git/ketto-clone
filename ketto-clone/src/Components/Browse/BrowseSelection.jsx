@@ -19,9 +19,11 @@ export function BrowseSelection({ HandleChange }) {
             </select>
             <p>from</p>
             <select name="location" onChange={(e) => HandleChange(e)}>
-                <option value="allLocations">All Location</option>
+                <option value="alllocations">All Location</option>
                 <option value="mumbai">Mumbai</option>
                 <option value="delhi">Delhi</option>
+                <option value="banglore">Bengaluru</option>
+                <option value="pune">Pune</option>
             </select>
         </div>
     )
