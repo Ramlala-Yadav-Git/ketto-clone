@@ -26,6 +26,13 @@
     },
     {
       "id": 5
+    },
+    {
+      "title1": "don king",
+      "img": "https://picsum.photos/200/300",
+      "email": "milind_nj2_008@masai.school",
+      "message": "campaigner",
+      "id": 6
     }
   ],
   "todos": [

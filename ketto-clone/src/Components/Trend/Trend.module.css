@@ -145,14 +145,14 @@
   grid-template-columns: 60% 25%;
   gap: 30px;
   margin:auto;
-  margin-top: 20px;
+  margin-top: 30px;
   /* height: 4000px; */
   color: #444;
 
 }
 .left {
   border-radius: 5px;
-  border: 1px solid #e8e8e8;
+  /* border: 1px solid #e8e8e8; */
   height: 100%;
 }
 
@@ -160,16 +160,20 @@
   height: 400px;
   margin-left: 100px;
 }
-
+.btn{
+  display: flex;
+  width:600px ;
+}
 .btn > button {
-  width: 110px;
+  width: 75px;
   font-size: 10px;
-  height: 40px;
-  margin: 10px;
-  border-radius: 10px;
+  height: 36px;
+  margin: 5px;
+  border-radius: 6px;
   color: grey;
   border: none;
   cursor: pointer;
+  margin-top: 20px;
 
 }
 
@@ -194,28 +198,41 @@
 .imgprofile >p{
     margin-left: 3px;
 }
+ .para{
+  width: 340px;
+  height: 40px;
+}
 
-.para > p:nth-child(2) {
-  margin-left: 50px;
-
+.socialmediap{
   color: #3b5998;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
+.socialmediaprice{
+  font-size: 30px;
+  font-weight: bold;
 
-.para > p:nth-child(3) {
-  font-size: 35px;
-  margin-left: 20px;
 }
-
-.para > p:nth-child(4) {
-  /* margin-left: 15px; */
-  font-weight: lighter;
-  font-size: 20px;
-  margin-top: -20px;
-  margin-left: 20px;
+.raised{
+  display: flex;
+  gap: 10px;
+}
+.raised>p:nth-child(1),.raised>p:nth-child(3){
+  color: gray;
+}
+.raised>p:nth-child(2)
+{
+font-weight: 400;
+color: black;
+}
+.para > p:nth-child(1) {
+  color: gray;
 }
 
 .progressbox1 {
   width: 100%;
+  height: 20px;
 }
 .h1box1 {
   color: #444;
@@ -223,15 +240,25 @@
   width: 65%;
   text-align: center;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .parasupporter {
   display: flex;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 15px;
   color: #444;;
 }
-
+.support,.support1{
+  display: flex;
+  gap: 10px;
+}
+.support>p:nth-child(2),.support1>p:nth-child(2){
+margin-top: 15px;
+}
+.support>p:nth-child(1),.support1>p:nth-child(1){
+  color:black;
+  font-size: 27px;
+}
 .sharewhatsapp {
   width: 250px;
   margin-left: 60%;
@@ -272,9 +299,10 @@
 
   .showcontact{
     display: flex;
-    justify-content: space-between;
 
   }
+
+  
   .contactmsg{
     display: flex;
     flex-direction: column;
@@ -285,8 +313,16 @@
 
   }
   
+  .contactmsg>p:nth-child(1){
+    font-size: 15px;
+    margin: 1%;
+    color: gray;
+    font-weight: bold;
+
+    
+  }
   .contactmsg>p{
-    font-size: 20px;
+    font-size: 15px;
     margin: 1%;
     color: gray;
 
@@ -297,6 +333,20 @@
     text-transform: capitalize;
   }
 
+.box1proimg1{
+  display: flex;
+  gap: 30px;
+}
+
+.box1proimg11{
+  display: flex;
+  gap: 30px;
+  margin-top:20px;
+}
+
+.profilebox1{
+ border-radius: 50%;
+}
 
 
 .campaignerbox1>button{
@@ -306,7 +356,17 @@
   background-color: white;
   font-weight: bold;
 }
-
+.campaignerbox1{
+  overflow: scroll;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  
+}
+.campaignerbox1:hover{
+  overflow: scroll;
+  overflow-x:hidden;
+  
+}
 
 .campaignerbox1>button:hover{
   cursor: pointer;
@@ -323,15 +383,24 @@
 }
 
 .Fundraising{
-  color:black;
+  display: flex;
+  gap: 20px;
+  color:#444;
   border: 1px solid #e8e8e8;
   background-color: rgb(255, 255, 255);
-  width: 340px;
+  width: 330px;
   height:50px;
   margin-top: 70px;
   border-radius: 10px;
   padding: 1%;
   border-bottom: none;
+  font-size: 25px;
+  padding: 3%;
+}
+.Fundraising>h3{
+  font-size: 20px;
+  font-weight: bolder;
+
 }
 
 .data{
@@ -371,8 +440,8 @@
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  width: 330px;
-  height:50px;
+  width: 340px;
+  height:100px;
   padding: 3%;
 }
 .donar{
@@ -467,8 +536,8 @@ justify-content: space-between;
   height: 20px;
 }
 .supporterdonated>p:nth-child(1){
-font-weight: bold;
-font-size: 18px;
+font-weight: bolder;
+font-size: 15px;
 padding: 4%;
 height: 10px;
 color: #e8e8e8;
@@ -485,8 +554,8 @@ color: #e8e8e8;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   width: 330px;
-  height:600px;
-  padding: 3%;
+  height:400px;
+  padding: 5%;
 }
 
 .generous{
@@ -636,7 +705,7 @@ outline: none;
 .modalcontent{
   display: inline;
   position: absolute;
-  top: 120%;
+  top: 125%;
   left: 40%;
   transform: translate(-50%,-50%);
   line-height: 1.4;
@@ -782,7 +851,7 @@ body.active-modal{
 
   display: inline;
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 35%;
   transform: translate(-50%,-50%);
   line-height: 1.4;
@@ -815,7 +884,7 @@ body.active-modal{
 }
 
 .contributepop1>p:nth-child(1){
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .contributepop1>button{
@@ -848,6 +917,9 @@ body.active-modal{
 
 
 }
+
+
+
 
 .contributepopbutton1{
   width: 200px;
@@ -1076,4 +1148,33 @@ height: 600px;
 
 }
 
-
+.Box1{
+  text-align: center;
+  background-color: #fff2e4;
+  width: 350px;
+  margin: auto;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0.5%;
+  display: flex;
+  margin: auto;
+  margin-top: 60px;
+}
+.Box1>p{
+  margin-left: 10px;
+  font-size: 15px;
+  color:#c1282d;
+  font: weight 200px;;
+  font-family: sans-serif;
+}
+.share1{
+  width: 100%;
+  height: 55px;
+  font-size: 20px;
+  color: white;
+  background-color: #3b5998;
+  padding: 4%;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}

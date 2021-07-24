@@ -196,7 +196,8 @@ const handleprice=()=>{
     <>
       {/* ---------------------------------left portion--------------------------- */}
       <div className={styles.Box1}>
-        <i class="fas fa-bug"> This fundraiser is in an urgent need of funds</i>
+        <i style={{color:"#c1282d",marginTop:"5px",marginLeft:"10px",fontWeight:"bold"}} class="fas fa-bug"></i>
+          <p>This fundraiser is in an urgent need of funds</p> 
       </div>
 
       <h1 className={styles.h1box1}>{props.h1}</h1>
@@ -235,9 +236,9 @@ const handleprice=()=>{
                       <i class="fab fa-google"></i> Mail{" "}
                     </p>
 
-                    <button onClick={togglemodal} className={styles.btnmodal}>
+                    {/* <button onClick={togglemodal} className={styles.btnmodal}>
                       close
-                    </button>
+                    </button> */}
                   </div>
                 </>
               )}
@@ -364,16 +365,23 @@ const handleprice=()=>{
               </button>
             </div>
 
-            <div className={styles.para}>
               <button className={styles.share1}>
                 <i class="fab fa-facebook-square"> Spread the world</i>
               </button>
 
-              <p>Every Social media share can bring ₹5000</p>
-              <p>{props.price}</p>
+              <p className={styles.socialmediap}>Every Social media share can bring ₹5000</p>
+              <p className={styles.socialmediaprice}>{props.price}</p>           
+               
+               <div className={styles.para}>
+                 <div className={styles.raised}>
+                 <p> raised out of </p> 
+                 <p>{props.reduce}</p> 
+                 <p> goals</p>
 
-              <p> raised out of {props.reduce}  goals</p>
-              <div>
+                 </div>
+          
+               <div>
+
                 <progress
                   className={styles.progressbox1}
                   value="70"
@@ -381,8 +389,16 @@ const handleprice=()=>{
                 />
 
                 <div className={styles.parasupporter}>
-                  <p>{props.supporter} supporter</p>
-                  <p>{props.daysleft}   days left</p>
+                 <div className={styles.support}>
+                 <p>{props.supporter}</p>
+                   <p>supporter</p>
+                 </div>
+                 
+                <div  className={styles.support1}>
+                <p>{props.daysleft}</p> 
+                  <p>days left</p>
+                </div>
+                 
                 </div>
               </div>
               {/*----------------------------------------- campaginer form *-----------------------------*/}
@@ -441,33 +457,36 @@ const handleprice=()=>{
 
 
                 <div className={styles.box1proimg1}>
-                  <img height="50px" src={props.profilebox1} alt="loading" />
+                  <div profilebox1div>
+                  <img  className={styles.profilebox1} height="50px" src={props.profilebox1} alt="loading" />
+
+                  </div>
                   <div className={styles.box1protext}>
-                    <p>campaigner</p>
-                    <p style={{ color: "#3b5998", fontWeight: "400px" }}>
+                    <p style={{ height:"10px",color:"grey",fontWeight:"bold" }}>campaigner</p>
+                    <p style={{ color: "#3b5998", fontWeight: "400px",height:"10px" }}>
                       {props.campaignername}
                     </p>
-                    <p>
-                      {" "}
-                      <i class="fas fa-map-marker-alt"></i>{" "}
+                    <p style={{ height:"10px",color:"grey" }}>
+                      <i class="fas fa-map-marker-alt"></i>
                       {props.campaignercity}
                     </p>
                   </div>
-                </div>
+           </div>
 
                 <div className={styles.box1proimg11}>
-                  <img height="50px" src={props.profilebox11} alt="loading" />
+                  <img className={styles.profilebox1} height="45px" src={props.profilebox11} alt="loading" />
                   <div className={styles.box1protext}>
-                    <p>campaigner</p>
-                    <p style={{ color: "#3b5998", fontWeight: "400px" }}>
+                    <p  style={{ height:"10px",color:"grey",fontWeight:"bold" }}>campaigner</p>
+                    <p style={{ color: "#3b5998", fontWeight: "400px",height:"10px"  }}>
                       {props.campaignername1}
                     </p>
                     <p>
-                      {" "}
-                      <i class="fas fa-map-marker-alt"></i>{" "}
+                      <i class="fas fa-map-marker-alt"></i>
                       {props.campaignercity1}
                     </p>
+
                   </div>
+
                 </div>
 
 
@@ -498,12 +517,13 @@ const handleprice=()=>{
 
               {/* -------------------------------------------fundrasing---------------------------------- */}
               <div className={styles.Fundraising}>
-                <h3>
-                  {" "}
-                  <i style={{ color: "grey" }} class="fab fa-rust"></i>{" "}
+                 <i style={{ color: "grey", }} class="fab fa-rust"></i>
+                  <h3>
+
                   Fundraising Team
                 </h3>
-              </div>
+                 </div>
+                  
 
               <div className={styles.plus}>
                 <div className={styles.Fundraisgplus}>
@@ -573,7 +593,7 @@ const handleprice=()=>{
                     color: "#01bfbd",
                     marginLeft: "10px",
                     marginTop: "5px",
-                    fontSize: "18px",
+                    fontSize: "15px",
                   }}
                 >
                   Start a Supporting Fundraiser
@@ -628,14 +648,14 @@ const handleprice=()=>{
 
               {/* ---------------------------------------most raised social sharing------------------------ */}
               <div className={styles.Fundraising}>
-                <h3>
                   <i
                     style={{ color: "gray" }}
                     class="fas fa-volume-up"
                   ></i>
+               <p style={{fontSize:"15px",fontWeight:"bolder"}} >
                   Most Raised from Social Sharing
-                </h3>
-              </div>
+                </p>
+                </div>
               <br />
               <div className={styles.donar}>
                 <div className={styles.donar1}>
@@ -660,11 +680,10 @@ const handleprice=()=>{
               {/* ---------------------------------------supporters------------------------------------------- */}
 
               <div className={styles.Fundraising}>
-                <h3>
-                  {" "}
                   <i style={{ color: "gray" }} class="fas fa-users">
-                    {" "}
-                  </i>{" "}
+                  </i>
+                  <h3>
+
                   {props.supportersocial} Supporters
                 </h3>
               </div>
@@ -674,7 +693,6 @@ const handleprice=()=>{
                 <div className={styles.supporterdonated}>
                   <p>DONATED VIA BANK / PAYTM / UPI ?</p>
                   <p>
-                    {" "}
                     <a href="">Click here</a> if you can't find your donation{" "}
                     <br /> listed below.
                   </p>
@@ -715,7 +733,6 @@ const handleprice=()=>{
 
                 <div className={styles.leftright}>
                   <p>
-                    {" "}
                     <i class="fas fa-chevron-left"></i>1 - 5 of 4799 donations
                     Have <i class="fas fa-chevron-right"></i>
                   </p>

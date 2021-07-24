@@ -5,10 +5,10 @@ import styles from "./Trend.module.css";
 const Comments = () => {
     
     const [users, Setusers]=useState([])
-    const [mydetails, setMydetails]=useState(false)
+    const [mydetails, setMydetails]=useState(true)
     const [update, setupdate]=useState(false)
     const [doc, setdoc]=useState(false)
-    const [about1, setabout]=useState(true)
+    const [about1, setabout]=useState(false)
 
 
 
