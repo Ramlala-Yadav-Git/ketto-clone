@@ -1183,3 +1183,7 @@ height: 600px;
   border: none;
   margin-top: 10px;
 }
+.Footer{
+  position: absolute;
+  margin-top: 1300px;
+}

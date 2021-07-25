@@ -18,12 +18,12 @@ export function Massages(params) {
                     </div>
                     <div className={styles.site}>
                         <div className={styles.face}>
-                            <i class="fab fa-facebook-square"></i>
+                            <i className="fab fa-facebook-square"></i>
                             <p>Chat with us</p>
 
                         </div>
                         <div className={styles.whats}>
-                            <i class="fab fa-whatsapp"></i>
+                            <i className="fab fa-whatsapp"></i>
                             <p>Chat with us</p>
                         </div>
 

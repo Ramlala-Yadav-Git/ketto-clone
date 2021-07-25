@@ -1,0 +1,88 @@
+.profile{
+    position: absolute;
+    right: 30px;
+    z-index: 10;
+}
+
+.profile *{
+ padding: 0px;
+margin: 0px;
+}
+.header{
+    margin-top: -5px;
+    position: absolute;
+    right: 80px;
+    z-index: 10;
+   
+}
+.header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(97, 234, 252, 0.76);
+    cursor: pointer;
+}
+.header i{
+color: rgba(8, 139, 156, 0.76);
+margin-left: 0px;
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    z-index: 10;
+}
+
+.des{
+    border: 1px solid rgba(177, 183, 184, 0.295);
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(214, 213, 213, 0.356);
+    margin-top: 38px;
+   border-radius: 10px;
+    
+    
+}
+.des:hover{
+    display: block;
+}
+.des > p{
+    padding-bottom:10px ;
+    padding-right: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.des > p:hover{
+    color: rgba(2, 103, 119, 0.76);
+}
+.des > h5{
+     padding-bottom:10px ;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.header:hover + .des{
+    display: block;
+}
+#details {
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    font-size: 20px;
+    color: rgba(223, 7, 7, 0.623);
+    cursor: pointer;
+    z-index: 20;
+}
+#details:hover{
+    color: red;
+}
+#profileClose {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    font-size: 20px;
+    color: rgba(223, 7, 7, 0.623);
+    cursor: pointer;
+    z-index: 20;
+}
+#profileClose:hover{
+    color: red;
+}

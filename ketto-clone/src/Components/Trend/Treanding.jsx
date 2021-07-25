@@ -6,8 +6,8 @@ const Trend = (props) => {
 
 
 
-    const handleroute=()=>{
-        document.location.href= "http://localhost:3000/Box1data"
+    const handleroute = () => {
+        document.location.href = "http://localhost:3000/Box1data"
     }
 
 
@@ -15,8 +15,9 @@ const Trend = (props) => {
     return (
         <>
             <div className={styles.Container}>
-                <div onClick={()=>handleroute()} 
-                className={styles.img1}>
+
+                <div onClick={() => handleroute()}
+                    className={styles.img1}>
                     <img src={props.imgsrc} alt="loading" />
                 </div>
 
@@ -56,7 +57,7 @@ const Trend = (props) => {
 
                 </div>
                 <div className={styles.imgprofile3}>
-                    <button className={styles.share}><i class="fab fa-facebook-square">Share</i></button>
+                    <button className={styles.share}><i className="fab fa-facebook-square">Share</i></button>
                     <button className={styles.delete}>Donate</button>
                 </div>
             </div>

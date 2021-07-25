@@ -2,7 +2,9 @@ import styles from "../Browse/Browse.module.css"
 
 
 export function BrowseShow({ image, title, logo, by, amount, progress, lastDonation, daysLeft, supporters }) {
-
+    const HandleDonate = () => {
+        document.location.href = "http://localhost:3000/fundraiser"
+    }
 
     return (
         <>
@@ -50,7 +52,7 @@ export function BrowseShow({ image, title, logo, by, amount, progress, lastDonat
                             <p>Share</p>
                         </div>
                         <div className={styles.donateButton}>
-                            <button>Donate</button>
+                            <button onClick={() => HandleDonate()}>Donate</button>
                         </div>
                     </div>
 

@@ -1,13 +1,23 @@
 import { NavParent, KetoIcon, LeftItems, RightItems, Icons, DropDown, WhatappIcon, SearchIcon, Fundraiser } from "../../StyledComponents/NavBar/NavParent";
 import styles from "../NavBar/NavBar.module.css";
-import { Link } from "react-router-dom"
-import { useRef } from "react";
-export function NavBar() {
+import stylesp from "../NavBar/Profile.module.css"
+import { Profile } from "./Profile";
+export function NavBar({ user }) {
     const HandleClick = () => {
         document.location.href = "http://localhost:3000"
     }
+    const HandleBrowse = () => {
+        document.location.href = "http://localhost:3000/browse"
 
+    }
+    let st = JSON.parse(localStorage.getItem("user"))
+    var u;
+    if (st) {
+        u = st.email;
 
+    }
+
+    //console.log(user);
     return (
         <><NavParent>
             <LeftItems>
@@ -29,9 +39,9 @@ export function NavBar() {
                             </div>
                             <div id={styles.hidden} >
 
-                                <p >Medical Treatment</p>
-                                <p >NGO / Charity</p>
-                                <p>Other Cause</p>
+                                <p onClick={() => { HandleBrowse() }} >Medical Treatment</p>
+                                <p onClick={() => { HandleBrowse() }} >NGO / Charity</p>
+                                <p onClick={() => { HandleBrowse() }}>Other Cause</p>
 
 
 
@@ -78,9 +88,16 @@ export function NavBar() {
                             <a href="/browse">Start a Fundraiser</a>
                         </div>
                     </Fundraiser>
-                    <div>
-                        <a href="/signin">Sign In</a>
-                    </div>
+                    {
+                        user ?
+                            <div className={stylesp.profile}>
+                                <Profile name={u} />
+                            </div> :
+                            <div>
+                                <a href="/login">Sign in</a>
+                            </div>
+                    }
+
 
 
                 </div>

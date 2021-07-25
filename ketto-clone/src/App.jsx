@@ -1,11 +1,11 @@
 import React from "react";
+import { Path } from "./Components/Route/Path"
 
-
-const App=()=>{
+const App = () => {
 
   return (
     <div>
- 
+      <Path />
     </div>
   );
 }
