@@ -1,6 +1,5 @@
 import { NavBar } from "../NavBar/NavBar"
 import { SectionFirst } from "../SectionFirst/SectionFirst"
-import { Data } from "../Trend/Data"
 import { FundRaiserSteps } from "../FundRaiserSteps/FundRaiserSteps"
 import { Massages } from "../Messages/Massages"
 import { ImageGallery } from "../ImageGallery/ImageGallery";

@@ -4,6 +4,7 @@ import { Browse } from "../Browse/Brows";
 import { Home } from "./Home";
 import { Login } from '../Login/Login'
 import { SignIn } from "../Login/SignIn"
+import { Crowdfunding } from "../Work/Crowdfunding"
 export function Path() {
     return (
         <div>
@@ -22,6 +23,9 @@ export function Path() {
                 </Route >
                 <Route exact path="/fundraiser">
                     <Box1data />
+                </Route >
+                <Route exact path="/howitworks">
+                    <Crowdfunding />
                 </Route >
             </Switch>
         </div>

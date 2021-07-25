@@ -53,7 +53,7 @@ export function NavBar({ user }) {
                         </DropDown>
                     </div>
                     <div>
-                        <a href="!#"> How It Works</a>
+                        <a href="http://localhost:3000/howitworks"> How It Works</a>
                     </div>
 
                     <div>

@@ -35,7 +35,7 @@ export const Raisefund = ({data1}) => {
                     </div>
                 
                 <p className={styles.para1}>
-                    <a href=""> Visit Campaign</a></p>
+                    <a href="http://localhost:3000/fundraiser"> Visit Campaign</a></p>
 
             </div>
             
