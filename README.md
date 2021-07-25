@@ -14,7 +14,7 @@ Executing the commands mentioned below one by one in your command line will help
 ```
 git clone https://github.com/Ramlala-Yadav-Git/Ketto-Clone
 npm install
-cd ./Ketto-Clone
+
 ```
 
 After cloning the repo to get the JSON data from json-server, you should run below commands.
@@ -32,7 +32,8 @@ json-server db.json --port 3004
 **To run the react app execute below command**
 
 ```
-npm start
+cd ./Ketto-Clone
+npm run start
 
 ```
 
