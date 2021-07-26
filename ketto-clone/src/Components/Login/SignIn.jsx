@@ -10,10 +10,15 @@ export function SignIn() {
     const [allEntry, setAllEntry] = useState([]);
 
     const HandleSignIn = (a) => {
-        alert("You have successfully registred")
+        alert("You have successfully registred");
+
+        axios.patch("http://localhost:3003/url/1", {
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HjnpS3HGQonZA7z19MDiAtKiLmnmsGSQGWKo0MSTPy6_L2rQLo_-Wi91M3ZRkNc6-2_qtvzRuBRLLw&usqp=CAU"
+        })
+
         setTimeout(() => {
             document.location.href = "http://localhost:3000/login"
-        }, 1000)
+        }, 100)
 
         // console.log(a);
     }

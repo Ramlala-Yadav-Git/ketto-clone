@@ -6,7 +6,9 @@ import { PersonalDetails } from "../PersonalDetails/PersonalDetails";
 export function Profile({ name }) {
     const [profile, setProfile] = useState(false)
     const [details, setDetails] = useState(false)
-
+    useEffect(() => {
+        profileUrl();
+    }, [])
     const HandleLogOut = () => {
         let u = JSON.parse(localStorage.getItem("user"))
         let data = {
