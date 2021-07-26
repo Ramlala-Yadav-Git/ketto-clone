@@ -158,6 +158,7 @@ export function InputForm({ status }) {
           onChange={handleChange}
         />
         <select name="category" onChange={handleChange}>
+          <option value="category">Choose Category</option>
           <option value="education">Education</option>
           <option value="medical">Medical</option>
           <option value="women and girls">Women and Girls</option>
@@ -167,7 +168,7 @@ export function InputForm({ status }) {
           type="text"
           name="title"
           // value={title}
-          placeholder="Reason"
+          placeholder="Reason for fundraising..."
           onChange={handleChange}
         />
 
@@ -201,7 +202,7 @@ export function InputForm({ status }) {
         <input
           type="number"
           name="days"
-          placeholder="Days requireed"
+          placeholder="Days required"
           onChange={handleChange}
         />
         <input

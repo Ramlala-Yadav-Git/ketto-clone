@@ -10,6 +10,7 @@ export function SignIn() {
     const [allEntry, setAllEntry] = useState([]);
 
     const HandleSignIn = (a) => {
+        alert("You have successfully registred")
         setTimeout(() => {
             document.location.href = "http://localhost:3000/login"
         }, 1000)
@@ -23,10 +24,10 @@ export function SignIn() {
         const newEntry = { email: email, password: password, status: false };
 
         setAllEntry({ ...allEntry, newEntry });
-        axios.post("http://localhost:3002/login", newEntry)
-        HandleSignIn(newEntry)
+        localStorage.setItem("signin", JSON.stringify(newEntry))
 
         //console.log(newEntry)
+        HandleSignIn()
 
 
     }

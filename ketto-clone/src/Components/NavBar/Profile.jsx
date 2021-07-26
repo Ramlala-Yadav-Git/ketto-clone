@@ -8,7 +8,16 @@ export function Profile({ name }) {
     const [details, setDetails] = useState(false)
 
     const HandleLogOut = () => {
-        localStorage.clear();
+        let u = JSON.parse(localStorage.getItem("user"))
+        let data = {
+            email: u.email,
+            password: u.password,
+            status: false
+        }
+        localStorage.setItem("user", JSON.stringify(data))
+
+
+        alert("You have succesfully logged out")
         document.location.href = "http://localhost:3000/"
     }
     const [image, setImage] = useState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HjnpS3HGQonZA7z19MDiAtKiLmnmsGSQGWKo0MSTPy6_L2rQLo_-Wi91M3ZRkNc6-2_qtvzRuBRLLw&usqp=CAU")

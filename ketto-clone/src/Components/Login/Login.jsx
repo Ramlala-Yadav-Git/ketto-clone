@@ -11,68 +11,36 @@ export function Login() {
 
 
 
-    const handlePass = (data) => {
-        const pass = data.filter((e) => {
-            return e.password === password
-        })
-        if (pass.length !== 0) { return true }
-        else { return false }
-    }
-    const handleEmail = (data) => {
-        const e = data.filter((e) => {
-            return e.email === email;
-        })
-        if (e.length !== 0) { handlePatch(e[0].id); return true }
-        else { return false }
-    }
-
-    const handlePatch = (id) => {
-        const newEntry = { email: email, password: password, status: true };
-
-        axios.patch("http://localhost:3002/login/" + id, { ...newEntry }
-
-        )
-        axios.get("http://localhost:3002/login/" + id).then(({ data }) => {
-            setUser(data.status)
-            localStorage.setItem("user", JSON.stringify(data))
-        })
-        let st = JSON.parse(localStorage.getItem("user"));
-        var u;
-        if (st) {
-            u = st.status;
-
-        }
-        else {
-            u = false
-        }
-        setUser(u);
-    }
-
-    const HandleLogin = (data) => {
-        if (handleEmail(data) && handlePass(data)) {
-
-            document.location.href = "http://localhost:3000/"
 
 
+    var st = "";
 
-
-
-        }
-        else {
-            alert("Wrong Credentials")
-        }
-
-    }
     const submitForm = (e) => {
         e.preventDefault();
 
 
+        let signInData = JSON.parse(localStorage.getItem("signin"))
+        if (signInData.email === email && signInData.password === password) {
+            let user = {
+                email: email,
+                password: password,
+                status: true
+            }
+            localStorage.setItem("user", JSON.stringify(user));
+            alert("You have succesfully logged in");
+            st = JSON.parse(localStorage.getItem("user"))
+            document.location.href = "http://localhost:3000"
+        }
 
+        else {
+            alert("Wrong Credential")
+        }
 
-        axios.get("http://localhost:3002/login").then(({ data }) => {
-            /// console.log(data);
-            HandleLogin(data)
-        })
+        st = JSON.parse(localStorage.getItem("user"))
+
+        if (st !== "") {
+            setUser(st.status)
+        }
 
 
     }

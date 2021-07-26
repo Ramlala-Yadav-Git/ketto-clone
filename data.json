@@ -18,57 +18,51 @@
   },
   "todos": [
     {
-      "id": 1
-    },
-    {
-      "title": "hfghg",
+      "title": "millind",
       "img": "https://picsum.photos/200/300",
-      "email": "hg",
-      "phone": "hfgdhgd",
+      "email": "ramlala_nj2_075@masai.school",
+      "phone": "1244",
       "country": "HTML",
-      "id": 2
-    },
-    {
-      "title": "hfghg",
-      "img": "https://picsum.photos/200/300",
-      "email": "hg",
-      "phone": "hfgdhgd",
-      "country": "HTML",
-      "id": 3
+      "id": 5
     },
     {
       "title": "ramlala",
       "img": "https://picsum.photos/200/300",
       "email": "ramlala_nj2_075@masai.school",
-      "phone": "07024426233",
+      "phone": "123",
       "country": "HTML",
-      "id": 4
+      "id": 6
+    },
+    {
+      "title": "ramlala",
+      "img": "https://picsum.photos/200/300",
+      "email": "ramlala_nj2_075@masai.school",
+      "phone": "6233",
+      "country": "HTML",
+      "id": 7
     }
   ],
   "cont": [
     {
+      "title1": "Ramlala",
+      "img": "https://picsum.photos/200/300",
+      "email": "ramlala_nj2_075@masai.school",
+      "message": "Ramlala is waiting",
       "id": 1
     },
     {
-      "title1": "gfdg",
+      "title1": "millind",
       "img": "https://picsum.photos/200/300",
-      "email": "gdfg",
-      "message": "gfdgdfg",
+      "email": "ramlala_nj2_075@masai.school",
+      "message": "why you want fund",
       "id": 2
     },
     {
-      "title1": "gfdg",
-      "img": "https://picsum.photos/200/300",
-      "email": "gdfg",
-      "message": "gfdgdfg",
-      "id": 3
-    },
-    {
-      "title1": "Ramalala",
-      "img": "https://picsum.photos/200/300",
       "email": "ramlala_nj2_075@masai.school",
-      "message": "somesh",
-      "id": 4
+      "img": "https://picsum.photos/200/300",
+      "title1": "Millind",
+      "message": "How",
+      "id": 3
     }
   ],
   "url": [

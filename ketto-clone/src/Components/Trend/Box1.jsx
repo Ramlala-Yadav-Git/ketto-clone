@@ -317,7 +317,7 @@ export const Box1 = (props) => {
                           value="HTML"
                         />
 
-                        <p>I am an Indian National</p>
+                        <p>I am an Indian</p>
                       </div>
                       <div>
                         <input
@@ -327,7 +327,7 @@ export const Box1 = (props) => {
                           value="HTML"
                         />
 
-                        <p>I am not an Indian National</p>
+                        <p>I am not an Indian </p>
                       </div>
                     </div>
                     <div className={styles.inputbtn1}>
