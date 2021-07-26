@@ -8,13 +8,33 @@ Ketto.org : Ketto is an Indian online crowdfunding platform, where any individua
 
 ## Installing and Running
 
-Executing the commands mentioned below one by one in your command line will help in making this React app up and running on your system.
+Executing the commands mentioned below one by one in your command line will help in making this React app .
+**Cloning**
 
 ```
 git clone https://github.com/Ramlala-Yadav-Git/Ketto-Clone
 npm install
+
+```
+
+After cloning the repo to get the JSON data from json-server, you should run below commands.
+
+**For data**
+
+```
+json-server data.json --port 3001
+json-server url.json --port 3002
+json-server loginData.json --port 3003
+json-server db.json --port 3004
+
+```
+
+**To run the react app execute below command**
+
+```
 cd ./Ketto-Clone
-npm start
+npm run start
+
 ```
 
 ## NPM Packages used
@@ -66,6 +86,7 @@ After Login user direcly redirect to home page.
 There are many Child pages linked to the Landing page and after login page, but for this clone following pages are made.
 
 ### Fundraiser form page :
+
 Below images shows steps to donate.
 
 <p float="left">  
@@ -73,13 +94,13 @@ Below images shows steps to donate.
   <img src="PreviewImageGallery/donationForm.jpeg" width="400">
 </p>
 
-
 There are some Key Features which are added in website clone such as:
+
 ### Special features:
 
-- *Chatbot*
-- *Supporters and Comments*
-- *Easy navigation by category section*
+- _Chatbot_
+- _Supporters and Comments_
+- _Easy navigation by category section_
 
 <p>
 <img src="PreviewImageGallery/chatbot.jpeg" width="400"/>
