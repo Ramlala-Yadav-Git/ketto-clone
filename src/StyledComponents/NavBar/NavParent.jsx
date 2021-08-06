@@ -82,6 +82,12 @@ position: absolute;
 right: -20px;
 top: 2px;
     }
+i{
+width: 20px;
+position: absolute;
+right: -25px;
+top: 7px;
+    }
 `
 
 const WhatappIcon = styled.div`
@@ -101,7 +107,7 @@ img{
     width: 18px;
     border-radius:10%;
     margin-right: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 `
@@ -115,7 +121,7 @@ img{
     position: absolute;
     width: 24px;
     left:-15px;
-    top: -1px;
+    top: 3px;
     margin-right: 2px;
 
 }

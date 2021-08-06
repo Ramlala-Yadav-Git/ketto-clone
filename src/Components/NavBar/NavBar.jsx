@@ -47,7 +47,8 @@ export function NavBar({ user }) {
 
                             </div>
                             <div>
-                                <img src="https://pics.freeicons.io/uploads/icons/png/20305395141540882611-512.png" alt="DropDown-Icon" />
+                                {/* <img src="https://pics.freeicons.io/uploads/icons/png/20305395141540882611-512.png" alt="DropDown-Icon" /> */}
+                                <i class="fas fa-caret-down"></i>
 
                             </div>
                         </DropDown>
