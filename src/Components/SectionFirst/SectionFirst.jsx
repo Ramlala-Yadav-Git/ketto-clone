@@ -2,10 +2,6 @@ import Styles from "../SectionFirst/SectionFirst.module.css";
 import { Featured } from "./Featured";
 export function SectionFirst() {
 
-    const HandleFundraiser = () => {
-        document.location.href = "http://localhost:3000/browse"
-    }
-
 
 
     return (
@@ -45,8 +41,17 @@ export function SectionFirst() {
 
                     </div>
                     <div>
-                        <button onClick={() => HandleFundraiser()}>Start Fundraiser for FREE</button>
+
+                        <button
+
+                        >Start Fundraiser for FREE
+
+
+                        </button>
+
                         <p>नि: शुल्क फंडरेजर शुरू करें </p>
+
+
                     </div>
                 </div>
             </div>

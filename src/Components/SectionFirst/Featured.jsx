@@ -1,5 +1,5 @@
 import Styles from "../SectionFirst/SectionFirst.module.css"
-
+import { Link } from "react-router-dom"
 export function Featured() {
     const HandleClick = () => {
         document.location.href = "http://localhost:3000/fundraiser"
@@ -21,10 +21,16 @@ export function Featured() {
                         <p>
                             With your support, countless children will receive health care and a happy life. Start your monthly donation today.
                         </p>
-                        <button onClick={() => HandleClick()}>
-                            DONATE NOW
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-V_iCYG69_2DV65bRvxlL3FgtbqtsW7T_OZBkJtXhMOsR28FBiPuJ3IKaDctkfScfm8uAhlRQYKXgw&usqp=CAU" alt="f" />
+
+                        <button >
+
+                            <Link to="/fundraiser" className={Styles.link} >
+                                DONATE NOW
+                            </Link>
+
+                            <img className={Styles.link} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-V_iCYG69_2DV65bRvxlL3FgtbqtsW7T_OZBkJtXhMOsR28FBiPuJ3IKaDctkfScfm8uAhlRQYKXgw&usqp=CAU" alt="f" />
                         </button>
+
                     </div>
                 </div>
             </div>

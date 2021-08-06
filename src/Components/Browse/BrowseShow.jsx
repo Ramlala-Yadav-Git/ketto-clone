@@ -1,10 +1,11 @@
 import styles from "../Browse/Browse.module.css"
+import { Link } from "react-router-dom"
 
 
 export function BrowseShow({ image, title, logo, by, amount, progress, lastDonation, daysLeft, supporters }) {
-    const HandleDonate = () => {
-        document.location.href = "http://localhost:3000/fundraiser"
-    }
+    // const HandleDonate = () => {
+    //     document.location.href = "http://localhost:3000/fundraiser"
+    // }
 
     return (
         <>
@@ -52,7 +53,9 @@ export function BrowseShow({ image, title, logo, by, amount, progress, lastDonat
                             <p>Share</p>
                         </div>
                         <div className={styles.donateButton}>
-                            <button onClick={() => HandleDonate()}>Donate</button>
+                            <Link to="/fundraiser">
+                                <button >Donate</button>
+                            </Link>
                         </div>
                     </div>
 

@@ -1,4 +1,3 @@
-import styles from "../Browse/Browse.module.css"
 
 
 export function BrowseHeader(params) {

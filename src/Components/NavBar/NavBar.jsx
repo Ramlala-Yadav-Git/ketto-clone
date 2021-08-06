@@ -1,11 +1,10 @@
-import { NavParent, KetoIcon, LeftItems, RightItems, Icons, DropDown, WhatappIcon, SearchIcon, Fundraiser } from "../../StyledComponents/NavBar/NavParent";
+import { Link } from "react-router-dom";
+import { NavParent, KetoIcon, LeftItems, RightItems, DropDown, WhatappIcon, SearchIcon, Fundraiser } from "../../StyledComponents/NavBar/NavParent";
 import styles from "../NavBar/NavBar.module.css";
 import stylesp from "../NavBar/Profile.module.css"
 import { Profile } from "./Profile";
 export function NavBar({ user }) {
-    const HandleClick = () => {
-        document.location.href = "http://localhost:3000"
-    }
+
     const HandleBrowse = () => {
         document.location.href = "http://localhost:3000/browse"
 
@@ -23,13 +22,15 @@ export function NavBar({ user }) {
             <LeftItems>
                 <div>
                     <KetoIcon>
-                        <div onClick={() => HandleClick()}>
-                            <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=70&dpr=1.0" alt="Keto_logo" />
-                        </div>
+                        <Link to="/">
+                            <div >
+                                <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=70&dpr=1.0" alt="Keto_logo" />
+                            </div>
+                        </Link>
                     </KetoIcon>
 
-                    <div onClick={() => HandleClick()} >
-                        <a href="/browse"> Browse Fundraisers</a>
+                    <div >
+                        <Link to="/browse">Browse Fundraisers</Link>
                     </div>
 
                     <div>
@@ -39,9 +40,12 @@ export function NavBar({ user }) {
                             </div>
                             <div id={styles.hidden} >
 
-                                <p onClick={() => { HandleBrowse() }} >Medical Treatment</p>
-                                <p onClick={() => { HandleBrowse() }} >NGO / Charity</p>
-                                <p onClick={() => { HandleBrowse() }}>Other Cause</p>
+                                <Link to="/browse">
+                                    <p  >Medical Treatment</p>
+                                    <p  >NGO / Charity</p>
+                                    <p >Other Cause</p>
+
+                                </Link>
 
 
 
@@ -54,7 +58,10 @@ export function NavBar({ user }) {
                         </DropDown>
                     </div>
                     <div>
-                        <a href="http://localhost:3000/howitworks"> How It Works</a>
+                        <Link to="/howitworks">
+                            How It Works
+                        </Link>
+
                     </div>
 
                     <div>
@@ -86,7 +93,10 @@ export function NavBar({ user }) {
                     </WhatappIcon>
                     <Fundraiser>
                         <div>
-                            <a href="/browse">Start a Fundraiser</a>
+                            <Link to="/browse">
+                                Start a Fundraiser
+                            </Link>
+
                         </div>
                     </Fundraiser>
                     {

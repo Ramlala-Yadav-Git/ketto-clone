@@ -139,4 +139,7 @@ position: absolute;
 right: -15px;
 top: 3px;
 }
+.link:hover{
+color: rgb(2, 179, 179);
+}
 
