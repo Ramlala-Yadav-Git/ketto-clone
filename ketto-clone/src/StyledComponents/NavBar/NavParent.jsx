@@ -7,6 +7,8 @@ border-bottom: 1px solid rgb(255,255,255);
 justify-content: space-around;
 padding: 2px;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ 
 `;
 const LeftItems = styled.div`
 /* border: 1px solid green; */
@@ -89,9 +91,11 @@ color:rgb(37,211,102);
 padding: 0px 30px 5px 10px ;
 border-radius: 5px;
 cursor: pointer;
+
 &>div{
     display: flex;
     font-weight: bold;
+   
 }
 img{
     width: 18px;
@@ -99,6 +103,7 @@ img{
     margin-right: 5px;
     margin-bottom: 2px;
 }
+
 `
 const SearchIcon = styled.div`
 position: relative;

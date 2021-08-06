@@ -11,12 +11,15 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
+
+    
 }
 .ContentDiv{
     width: 45%;
     margin-left:52%;
     padding:2%;
     margin-top: 2%;
+   
 }
 .ContentDiv >div> h1{
     color: rgb(71, 71, 71);
@@ -136,3 +139,4 @@ position: absolute;
 right: -15px;
 top: 3px;
 }
+

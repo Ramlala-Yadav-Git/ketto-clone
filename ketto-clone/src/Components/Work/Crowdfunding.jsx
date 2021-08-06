@@ -16,7 +16,11 @@ export const Crowdfunding = () => {
     const [details1, setDetails1] = useState(data1);
     const st = JSON.parse(localStorage.getItem("user"))
     const breakPoints = [
-        { width: 1200, itemsToShow: 2 }
+        { width: 1, itemsToShow: 1 },
+        { width: 550, itemsToShow: 1, itemsToScroll: 2, pagination: false },
+        { width: 850, itemsToShow: 1 },
+        { width: 1150, itemsToShow: 2, itemsToScroll: 2 },
+
     ]
     var user;
     if (st) {

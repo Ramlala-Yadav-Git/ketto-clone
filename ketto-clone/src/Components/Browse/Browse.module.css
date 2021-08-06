@@ -308,3 +308,15 @@ color: rgba(236, 8, 8, 0.719);
     text-align: center;
     margin-left: 30px;
 }
+@media all and (max-width:1200px) {
+    .BrowseShowItems{
+       grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media all and (max-width:700px) {
+    .BrowseShowItems{
+       grid-template-columns: 1fr;
+
+    }
+}
