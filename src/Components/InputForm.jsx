@@ -64,8 +64,8 @@ export function InputForm({ status }) {
   const [title, setTitle] = useState("");
   const [filePath, setFilePath] = useState("");
   const [url, setUrl] = useState("");
-  const [email, setEmail] = useState("");
-  const [mobile, setMobile] = useState("");
+  const [, setEmail] = useState("");
+  const [, setMobile] = useState("");
   const [amount, setAmount] = useState(0);
   const [days, setDays] = useState(0);
   const [location, setLocation] = useState("");

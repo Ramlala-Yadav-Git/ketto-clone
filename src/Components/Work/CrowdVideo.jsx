@@ -7,7 +7,7 @@ export const CrowdVideo = ({ data }) => {
     <>
       <div className={styles.head}>
         <div className={styles.videodiv}>
-          <iframe src={src} frameborder="0"></iframe>
+          <iframe src={src} frameborder="0" title={"Video"}></iframe>
         </div>
         <div className={styles.rightarea}>
           <p>{message1}</p>

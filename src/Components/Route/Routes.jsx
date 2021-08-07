@@ -5,7 +5,7 @@ import { Home } from "./Home";
 import { Login } from '../Login/Login'
 import { SignIn } from "../Login/SignIn"
 import { Crowdfunding } from "../Work/Crowdfunding"
-export function Path() {
+export function Routes() {
     return (
         <div>
             <Switch>

@@ -5,10 +5,7 @@ import stylesp from "../NavBar/Profile.module.css"
 import { Profile } from "./Profile";
 export function NavBar({ user }) {
 
-    const HandleBrowse = () => {
-        document.location.href = "http://localhost:3000/browse"
 
-    }
     let st = JSON.parse(localStorage.getItem("user"))
     var u;
     if (st) {
@@ -52,7 +49,7 @@ export function NavBar({ user }) {
                             </div>
                             <div>
                                 {/* <img src="https://pics.freeicons.io/uploads/icons/png/20305395141540882611-512.png" alt="DropDown-Icon" /> */}
-                                <i class="fas fa-caret-down"></i>
+                                <i className="fas fa-caret-down"></i>
 
                             </div>
                         </DropDown>
@@ -105,7 +102,10 @@ export function NavBar({ user }) {
                                 <Profile name={u} />
                             </div> :
                             <div>
-                                <a href="/login">Sign in</a>
+                                <Link to="/login">
+                                    Sign in
+
+                                </Link>
                             </div>
                     }
 

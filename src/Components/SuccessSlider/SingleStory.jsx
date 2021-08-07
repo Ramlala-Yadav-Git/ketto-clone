@@ -1,5 +1,5 @@
 // npm install --save-dev @iconify/react @iconify-icons/simple-icons
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import whatsappIcon from "@iconify-icons/simple-icons/whatsapp";
 import styled from "styled-components";
 export function SingleStory({ prop }) {

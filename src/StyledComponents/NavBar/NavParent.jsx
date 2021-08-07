@@ -97,7 +97,6 @@ color:rgb(37,211,102);
 padding: 0px 30px 5px 10px ;
 border-radius: 5px;
 cursor: pointer;
-
 &>div{
     display: flex;
     font-weight: bold;
@@ -107,7 +106,8 @@ img{
     width: 18px;
     border-radius:10%;
     margin-right: 5px;
-    margin-bottom: 1px;
+    margin-bottom: -0px;
+    margin-top: 4px;
 }
 
 `

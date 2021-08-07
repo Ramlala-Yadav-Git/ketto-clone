@@ -2,7 +2,6 @@ import Styles from "./Login.module.css"
 import { useState } from "react"
 import { NavBar } from "../NavBar/NavBar";
 import { Footer } from "../Footer/Footer";
-import axios from 'axios'
 export function Login() {
 
     const [email, setEmail] = useState("");
@@ -20,6 +19,11 @@ export function Login() {
 
 
         let signInData = JSON.parse(localStorage.getItem("signin"))
+        if (!signInData) {
+            alert("Please Register Youself First")
+            document.location.href = "http://localhost:3000/signin"
+            return
+        }
         if (signInData.email === email && signInData.password === password) {
             let user = {
                 email: email,
@@ -30,6 +34,7 @@ export function Login() {
             alert("You have succesfully logged in");
             st = JSON.parse(localStorage.getItem("user"))
             document.location.href = "http://localhost:3000"
+            return
         }
 
         else {

@@ -1,5 +1,5 @@
 // npm install --save-dev @iconify/react @iconify-icons/dashicons
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import arrowLeftAlt2 from "@iconify-icons/dashicons/arrow-left-alt2";
 import arrowRightAlt2 from "@iconify-icons/dashicons/arrow-right-alt2";
 import { useState } from "react";

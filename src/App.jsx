@@ -1,11 +1,11 @@
 import React from "react";
-import { Path } from "./Components/Route/Path"
+import { Routes } from "./Components/Route/Routes"
 
 const App = () => {
 
   return (
     <div>
-      <Path />
+      <Routes />
     </div>
   );
 }

@@ -12,8 +12,8 @@ import { FundRaiserSteps } from '../FundRaiserSteps/FundRaiserSteps';
 
 
 export const Crowdfunding = () => {
-    const [details, setDetails] = useState(data);
-    const [details1, setDetails1] = useState(data1);
+    const [details,] = useState(data);
+    const [details1,] = useState(data1);
     const st = JSON.parse(localStorage.getItem("user"))
     const breakPoints = [
         { width: 1, itemsToShow: 1 },

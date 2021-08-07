@@ -1,7 +1,5 @@
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
-import { Browse } from "../Browse/Brows";
-import { Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
 const CHATBOT_THEME = {
   background: "#FFFEFC",
   fontFamily: "Roboto",

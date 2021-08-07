@@ -457,7 +457,7 @@ export const Box1 = (props) => {
 
 
                 <div className={styles.box1proimg1}>
-                  <div profilebox1div>
+                  <div>
                     <img className={styles.profilebox1} height="50px" src={props.profilebox1} alt="loading" />
 
                   </div>
@@ -693,7 +693,7 @@ export const Box1 = (props) => {
                 <div className={styles.supporterdonated}>
                   <p>DONATED VIA BANK / PAYTM / UPI ?</p>
                   <p>
-                    <a href="">Click here</a> if you can't find your donation{" "}
+                    <a href="/">Click here</a> if you can't find your donation{" "}
                     <br /> listed below.
                   </p>
                 </div>

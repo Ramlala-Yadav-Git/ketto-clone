@@ -1,9 +1,7 @@
 import Styles from "../SectionFirst/SectionFirst.module.css"
 import { Link } from "react-router-dom"
 export function Featured() {
-    const HandleClick = () => {
-        document.location.href = "http://localhost:3000/fundraiser"
-    }
+
     return (
         <>
             <div className={Styles.Featured}>

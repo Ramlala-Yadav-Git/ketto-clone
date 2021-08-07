@@ -1,6 +1,5 @@
 import Carousel from 'react-elastic-carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Massages } from '../Messages/Massages';
 import styles from "../FeaturedIn/FeaturedIn.module.css"
 import { useEffect, useState } from 'react';
 import { BrowseShow } from '../Browse/BrowseShow';
