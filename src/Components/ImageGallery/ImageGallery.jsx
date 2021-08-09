@@ -34,6 +34,25 @@ const Others = styled.div`
   &:hover {
     background-color: #069392;
   }
+  & > div {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: auto;
+  }
+  & > h4 {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    color: #fff;
+  }
+  & > hr {
+    width: 20%;
+    height: 5px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
 `;
 export function ImageGallery() {
   return (
@@ -94,33 +113,9 @@ export function ImageGallery() {
         link=""
       />
       <Others>
-        <div
-          style={{
-            position: "absolute",
-            bottom: "0px",
-            width: "100%",
-            margin: "auto"
-          }}
-        >
-          <h4
-            style={{
-              display: "block",
-              textAlign: "center",
-              margin: "0px",
-              color: "#fff"
-            }}
-          >
-            OTHERS
-          </h4>
-          <hr
-            style={{
-              width: "20%",
-              height: "5px",
-              backgroundColor: "#fff",
-              border: "none",
-              borderRadius: "5px"
-            }}
-          />
+        <div>
+          <h4>OTHERS</h4>
+          <hr />
         </div>
       </Others>
     </Gallery>
