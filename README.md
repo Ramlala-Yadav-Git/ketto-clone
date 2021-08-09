@@ -52,10 +52,10 @@ npm run start
 ## Technologies Used
 
 <p float="left">
-  <img src="PreviewImageGallery/html.png" height="150"/>
-  <img src="PreviewImageGallery/css.png"  height="150"/> 
-  <img src="PreviewImageGallery/JavaScript.png"  height="150"/>
-  <img src="PreviewImageGallery/React.png" height="150"/>
+  <img src="./src/PreviewImageGallery/html.png" height="150"/>
+  <img src="./src/PreviewImageGallery/css.png"  height="150"/> 
+  <img src="./src/PreviewImageGallery/JavaScript.png"  height="150"/>
+  <img src="./src/PreviewImageGallery/React.png" height="150"/>
 </p>
 
 ## Features
@@ -71,7 +71,7 @@ Sliders are included in the page, popups are shown when hovered.
 At the bottom section there is a footer, both Header & Footer are same across all the pages.
 The page is responsive for all screen sizes.
 <br/>
-<img src="PreviewImageGallery/index.jpeg" width="500"/>
+<img src="./src/PreviewImageGallery/index.jpeg" width="500"/>
 
 The library used for icon is:"https://iconify.design/"
 <br/>
@@ -80,7 +80,7 @@ The library used for icon is:"https://iconify.design/"
 
 Existing user can Login and new user's can SignUp themselves on page.
 From NavigationBar of Landing Page.
-<img src="PreviewImageGallery/login.jpeg" width="500"/>
+<img src="./src/PreviewImageGallery/login.jpeg" width="500"/>
 
 After Login user direcly redirect to home page.
 There are many Child pages linked to the Landing page and after login page, but for this clone following pages are made.
@@ -90,8 +90,8 @@ There are many Child pages linked to the Landing page and after login page, but 
 Below images shows steps to donate.
 
 <p float="left">  
-  <img src="PreviewImageGallery/steps.jpeg"  width="400"/> 
-  <img src="PreviewImageGallery/donationForm.jpeg" width="400">
+  <img src="./src/PreviewImageGallery/steps.jpeg"  width="400"/> 
+  <img src="./src/PreviewImageGallery/donationForm.jpeg" width="400">
 </p>
 
 There are some Key Features which are added in website clone such as:
@@ -103,10 +103,10 @@ There are some Key Features which are added in website clone such as:
 - _Easy navigation by category section_
 
 <p>
-<img src="PreviewImageGallery/chatbot.jpeg" width="400"/>
-<img src="PreviewImageGallery/category.jpeg" width="400"/>
-<img src="PreviewImageGallery/supporters.jpeg" width="400">
-<img src="PreviewImageGallery/comments.jpeg" width="400"/>
+<img src="./src/PreviewImageGallery/chatbot.jpeg" width="400"/>
+<img src="./src/PreviewImageGallery/category.jpeg" width="400"/>
+<img src="./src/PreviewImageGallery/supporters.jpeg" width="400">
+<img src="./src/PreviewImageGallery/comments.jpeg" width="400"/>
 </p>
 
 There are some redirected pages and sub features given below:
@@ -114,11 +114,11 @@ There are some redirected pages and sub features given below:
 ### Other features and pages :
 
 <p float="left">
-  <img src="PreviewImageGallery/patient.jpeg" width="600">
-  <img src="PreviewImageGallery/successStory.jpeg" width="400"/>
-  <img src="PreviewImageGallery/tools.jpeg"  width="400"/> 
-  <img src="PreviewImageGallery/disease.jpeg"  width="400"/>
-  <img src="PreviewImageGallery/footer.jpeg" width="400"/>
+  <img src="./src/PreviewImageGallery/patient.jpeg" width="600">
+  <img src="./src/PreviewImageGallery/successStory.jpeg" width="400"/>
+  <img src="./src/PreviewImageGallery/tools.jpeg"  width="400"/> 
+  <img src="./src/PreviewImageGallery/disease.jpeg"  width="400"/>
+  <img src="./src/PreviewImageGallery/footer.jpeg" width="400"/>
 </p>
 
 ## Team Members and Contributors
