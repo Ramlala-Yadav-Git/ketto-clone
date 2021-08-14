@@ -17,23 +17,22 @@ npm install
 
 ```
 
-After cloning the repo to get the JSON data from json-server, you should run below commands.
-
-**For data**
-
-```
-json-server data.json --port 3001
-json-server url.json --port 3002
-json-server loginData.json --port 3003
-json-server db.json --port 3004
-
-```
 
 **To run the react app execute below command**
 
 ```
-cd ./Ketto-Clone
+cd ketto-clone
 npm run start
+
+```
+
+**For Mock data Used In This Project Please Run these Commands :- **
+
+
+```
+json-server data.json --port 3001
+json-server url.json --port 3003
+json-server db.json --port 3004
 
 ```
 
