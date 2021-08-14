@@ -23,8 +23,7 @@ After cloning the repo to get the JSON data from json-server, you should run bel
 
 ```
 json-server data.json --port 3001
-json-server url.json --port 3002
-json-server loginData.json --port 3003
+json-server url.json --port 3003
 json-server db.json --port 3004
 
 ```
