@@ -26,8 +26,8 @@ npm run start
 
 ```
 
-**For Mock data Used In This Project**
-Plese Run these Commands :-
+**For Mock data Used In This Project Please Run these Commands :- **
+
 
 ```
 json-server data.json --port 3001
