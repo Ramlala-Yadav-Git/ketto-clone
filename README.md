@@ -21,7 +21,7 @@ npm install
 **To run the react app execute below command**
 
 ```
-cd ./Ketto-Clone
+cd ketto-clone
 npm run start
 
 ```
