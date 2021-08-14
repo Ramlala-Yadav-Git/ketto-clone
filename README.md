@@ -121,6 +121,10 @@ There are some redirected pages and sub features given below:
   <img src="./src/PreviewImageGallery/footer.jpeg" width="400"/>
 </p>
 
+### Click the below image to see a video demo of the website on youtube.com
+
+[![ketto-video-image.png](https://i.postimg.cc/Njcb8Hjs/ketto-video-image.png)](https://www.youtube.com/watch?v=2Z3eWws3ucI)
+
 ## Team Members and Contributors
 
 - [@Ramlala Yadav](https://github.com/Ramlala-Yadav-Git)
