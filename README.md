@@ -17,22 +17,22 @@ npm install
 
 ```
 
-After cloning the repo to get the JSON data from json-server, you should run below commands.
 
-**For data**
+**To run the react app execute below command**
+
+```
+cd ketto-clone
+npm run start
+
+```
+
+**For Mock data Used In This Project Please Run these Commands :- **
+
 
 ```
 json-server data.json --port 3001
 json-server url.json --port 3003
 json-server db.json --port 3004
-
-```
-
-**To run the react app execute below command**
-
-```
-cd ./Ketto-Clone
-npm run start
 
 ```
 
@@ -119,6 +119,10 @@ There are some redirected pages and sub features given below:
   <img src="./src/PreviewImageGallery/disease.jpeg"  width="400"/>
   <img src="./src/PreviewImageGallery/footer.jpeg" width="400"/>
 </p>
+
+### Click the below image to see a video demo of the website on youtube.com
+
+[![ketto-video-image.png](https://i.postimg.cc/Njcb8Hjs/ketto-video-image.png)](https://www.youtube.com/watch?v=2Z3eWws3ucI)
 
 ## Team Members and Contributors
 
