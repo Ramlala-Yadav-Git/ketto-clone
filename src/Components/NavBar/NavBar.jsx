@@ -66,8 +66,8 @@ export function NavBar({ user }) {
                     </div>
                     <SearchIcon >
                         <div>
-                            <div>
-                                <img src="https://cdn.icon-icons.com/icons2/2566/PNG/512/search_icon_153438.png" alt="SearchIcon" />
+                            <div className={styles.searchIconNav}>
+                                <i class="fas fa-search"></i>
                             </div>
                             <div>
                                 <span>Search</span>

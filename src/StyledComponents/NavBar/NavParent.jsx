@@ -117,12 +117,15 @@ position: relative;
 & > div{
     margin-left: 10px;
 }
-img{
+i{
     position: absolute;
     width: 24px;
     left:-15px;
-    top: 3px;
+    top: 5px;
+    font-size: 18px;
     margin-right: 2px;
+    color: #887878;
+    font-weight: 700;
 
 }
 

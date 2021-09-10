@@ -1,5 +1,5 @@
 // npm install --save-dev @iconify/react @iconify-icons/simple-icons
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
 import styled from "styled-components";
 export function SingleStory({ prop }) {
   const SoloStory = styled.div`
@@ -103,7 +103,14 @@ export function SingleStory({ prop }) {
           <div>
             <span>Subscribe to read such inspiring stories</span>
             <a href="/">
-              <Icon icon="logos:whatsapp" />
+              <i style={{
+                // width: "50px",
+                // height: "50px",
+                fontSize: "25px",
+                color: "#02b355"
+              }} class="fab fa-whatsapp"></i>
+
+
               Subscribe
             </a>
           </div>
