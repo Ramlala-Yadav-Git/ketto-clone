@@ -95,7 +95,7 @@ export const Box1 = (props) => {
 
   const getTodos = async () => {
     try {
-      const url = `http://localhost:3001/todos`;
+      const url = `https://ketto-data.herokuapp.com/todos`;
 
       const data = await axios.get(url);
       const result = data.data
@@ -119,7 +119,7 @@ export const Box1 = (props) => {
 
   const getTodoscont = async () => {
     try {
-      const url = `http://localhost:3001/cont`;
+      const url = `https://ketto-data.herokuapp.com/cont`;
 
       const data1 = await axios.get(url);
       const result1 = data1.data
@@ -143,7 +143,7 @@ export const Box1 = (props) => {
   //posting data here
   const postdata = () => {
     axios
-      .post("http://localhost:3001/todos", formData)
+      .post("https://ketto-data.herokuapp.com/todos", formData)
       .then((res) => {
         // console.log(res)
 
@@ -162,7 +162,7 @@ export const Box1 = (props) => {
   //posting data here
   const postdatacont = () => {
     axios
-      .post("http://localhost:3001/cont", formDatacont)
+      .post("https://ketto-data.herokuapp.com/cont", formDatacont)
       .then((res) => {
         // console.log(res)
 

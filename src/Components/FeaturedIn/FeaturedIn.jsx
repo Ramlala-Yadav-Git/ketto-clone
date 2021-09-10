@@ -26,7 +26,7 @@ export function FeaturedIn(params) {
 
 
     const getData = () => {
-        axios.get("http://localhost:3004/fundraiser").then(({ data }) => {
+        axios.get("https://ketto-data.herokuapp.com/fundraiser").then(({ data }) => {
 
             setShowData([...data])
             setSendData([...data])

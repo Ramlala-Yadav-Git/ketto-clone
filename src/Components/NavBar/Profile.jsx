@@ -25,7 +25,7 @@ export function Profile({ name }) {
     const [image, setImage] = useState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HjnpS3HGQonZA7z19MDiAtKiLmnmsGSQGWKo0MSTPy6_L2rQLo_-Wi91M3ZRkNc6-2_qtvzRuBRLLw&usqp=CAU")
 
     const profileUrl = () => {
-        axios.get("http://localhost:3003/url").then(({ data }) => {
+        axios.get("https://ketto-data.herokuapp.com/url").then(({ data }) => {
             if (data.length !== 0) {
                 setImage(data[0].url)
             }

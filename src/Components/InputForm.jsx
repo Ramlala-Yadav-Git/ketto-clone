@@ -119,7 +119,7 @@ export function InputForm({ status }) {
       lastDonation: lastDonation,
       daysLeft: days,
     };
-    axios.post("http://localhost:3004/fundraiser", payLoad);
+    axios.post("https://ketto-data.herokuapp.com/fundraiser", payLoad);
     /// console.log((payLoad));
   }
 

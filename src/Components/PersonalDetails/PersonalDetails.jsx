@@ -22,7 +22,7 @@ export function PersonalDetails({ getProfile }) {
         };
         reader.readAsDataURL(filePath);
 
-        axios.patch("http://localhost:3003/url/1", { url })
+        axios.patch("https://ketto-data.herokuapp.com/url/1", { url })
         setTimeout(() => {
             getProfile()
         }, 1000)

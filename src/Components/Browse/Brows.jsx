@@ -24,7 +24,7 @@ export function Browse(params) {
 
 
     const getData = () => {
-        axios.get("http://localhost:3004/fundraiser").then(({ data }) => {
+        axios.get("https://ketto-data.herokuapp.com/fundraiser").then(({ data }) => {
 
             setShowData([...data])
             setSendData([...data])
@@ -71,44 +71,44 @@ export function Browse(params) {
     }
     const HandleRender = () => {
         if (category !== "" && type !== "" && location !== "") {
-            axios.get(`http://localhost:3004/fundraiser?category=${category}&type=${type}&location=${location}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?category=${category}&type=${type}&location=${location}`).then(({ data }) => {
                 setSendData([...data])
 
 
             })
         }
         else if (category !== "" && type !== "") {
-            axios.get(`http://localhost:3004/fundraiser?category=${category}&type=${type}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?category=${category}&type=${type}`).then(({ data }) => {
                 setSendData([...data])
 
             })
         }
         else if (category !== "" && location !== "") {
-            axios.get(`http://localhost:3004/fundraiser?category=${category}$location=${location}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?category=${category}$location=${location}`).then(({ data }) => {
                 setSendData([...data])
 
             })
         }
         else if (type !== "" && location !== "") {
-            axios.get(`http://localhost:3004/fundraiser?type=${type}&location=${location}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?type=${type}&location=${location}`).then(({ data }) => {
                 setSendData([...data])
 
             })
         }
         else if (category !== "") {
-            axios.get(`http://localhost:3004/fundraiser?category=${category}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?category=${category}`).then(({ data }) => {
                 setSendData([...data])
 
             })
         }
         else if (location !== "") {
-            axios.get(`http://localhost:3004/fundraiser?location=${location}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?location=${location}`).then(({ data }) => {
                 setSendData([...data])
 
             })
         }
         else if (type !== "") {
-            axios.get(`http://localhost:3004/fundraiser?type=${type}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?type=${type}`).then(({ data }) => {
                 setSendData([...data])
             })
         }
@@ -123,7 +123,7 @@ export function Browse(params) {
     const HandleSearchChange = (e) => {
         if (e.keyCode === 13) {
 
-            axios.get(`http://localhost:3004/fundraiser?q=${e.target.value}`).then(({ data }) => {
+            axios.get(`https://ketto-data.herokuapp.com/fundraiser?q=${e.target.value}`).then(({ data }) => {
                 setSendData([...data])
             })
         }
