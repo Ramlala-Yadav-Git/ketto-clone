@@ -1,7 +1,7 @@
 // npm install --save-dev @iconify/react @iconify-icons/dashicons
 import { Icon } from "@iconify/react";
-import arrowLeftAlt2 from "@iconify-icons/dashicons/arrow-left-alt2";
-import arrowRightAlt2 from "@iconify-icons/dashicons/arrow-right-alt2";
+// import arrowLeftAlt2 from "@iconify-icons/dashicons/arrow-left-alt2";
+// import arrowRightAlt2 from "@iconify-icons/dashicons/arrow-right-alt2";
 import { useState } from "react";
 import styled from "styled-components";
 import { SingleStory } from "./SingleStory";
@@ -78,7 +78,7 @@ export function SuccessStoriesContainer() {
       </StoryContainerHeader>
       <StoryContainer>
         <Icon
-          icon={arrowLeftAlt2}
+          icon="dashicons:arrow-left-alt2"
           width="50px"
           height="50px"
           color="#01bfbd"
@@ -86,7 +86,7 @@ export function SuccessStoriesContainer() {
         />
         <SingleStory prop={stories[counter]} />
         <Icon
-          icon={arrowRightAlt2}
+          icon="dashicons:arrow-right-alt2"
           width="50px"
           height="50px"
           color="#01bfbd"
