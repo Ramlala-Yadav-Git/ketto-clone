@@ -4,7 +4,18 @@ Ketto.org : Ketto is an Indian online crowdfunding platform, where any individua
 
 <img src="./src/PreviewImageGallery/ketto.png" width="400"/>
 
-**Our team was given a task to Clone the ketto.org Website.**
+
+## Our team was given a task to Clone the ketto.org Website.
+
+
+## See Our Live Website
+
+https://ketto.herokuapp.com
+
+
+
+
+
 
 ## Installing and Running
 
