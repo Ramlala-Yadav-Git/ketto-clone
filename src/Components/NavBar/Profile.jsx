@@ -20,7 +20,7 @@ export function Profile({ name }) {
 
 
         alert("You have succesfully logged out")
-        document.location.href = "http://localhost:3000/"
+        document.location.href = "https://ketto.herokuapp.com"
     }
     const [image, setImage] = useState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HjnpS3HGQonZA7z19MDiAtKiLmnmsGSQGWKo0MSTPy6_L2rQLo_-Wi91M3ZRkNc6-2_qtvzRuBRLLw&usqp=CAU")
 

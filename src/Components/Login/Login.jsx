@@ -21,7 +21,7 @@ export function Login() {
         let signInData = JSON.parse(localStorage.getItem("signin"))
         if (!signInData) {
             alert("Please Register Youself First")
-            document.location.href = "http://localhost:3000/signin"
+            document.location.href = "https://ketto.herokuapp.com/signin"
             return
         }
         if (signInData.email === email && signInData.password === password) {
@@ -33,7 +33,7 @@ export function Login() {
             localStorage.setItem("user", JSON.stringify(user));
             alert("You have succesfully logged in");
             st = JSON.parse(localStorage.getItem("user"))
-            document.location.href = "http://localhost:3000"
+            document.location.href = "https://ketto.herokuapp.com"
             return
         }
 

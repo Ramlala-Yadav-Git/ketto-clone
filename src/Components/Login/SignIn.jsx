@@ -17,7 +17,7 @@ export function SignIn() {
         })
 
         setTimeout(() => {
-            document.location.href = "http://localhost:3000/login"
+            document.location.href = "https://ketto.herokuapp.com/login"
         }, 100)
 
         // console.log(a);
